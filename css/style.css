@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'gameFont';
+    src: url('../fonts/game.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'textGame';
+    src: url('../fonts/ci-gamedev.ttf') format('truetype');
+}
+nav a {
+    font-family: 'gameFont';
+    font-size: 1em;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border: 5px solid #ccc; /* Memberikan border opsional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan opsional */
+}
+.judul-gradient {
+    font-family: 'gameFont';  /* Ganti dengan font yang sesuai */
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(to right, #FFD700, #FFB347); /* Gradasi dari Kuning ke Oranye */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.text-gradient {
+    font-family: 'gameFont';  /* Ganti dengan font yang sesuai */
+    background: linear-gradient(to right, #FFD700, #FFB347); /* Gradasi dari Kuning ke Oranye */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.starry-sky {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #fff;
+    border-radius: 50%;
+    animation: twinkle 2s infinite;
+}
+
+.star[data-size="large"] {
+    width: 5px;
+    height: 5px;
+}
+
+.star[data-size="medium"] {
+    width: 4px;
+    height: 4px;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+
+        /* Menambah bintang dengan ukuran acak */
+        .star[data-size="small"] {
+            width: 2px;
+            height: 2px;
+        }
+
+        .star[data-size="medium"] {
+            width: 4px;
+            height: 4px;
+        }
+
+        .star[data-size="large"] {
+            width: 6px;
+            height: 6px;
+        }
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 10px;
+        }
+        
+        .skill-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            width: 120px;
+        }
+        
+        .skill-logo {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .skill-box span {
+            font-size: 16px;
+            color: #333;
+        }
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+            width: 100%;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background-color: #ddd;
+        }
+        
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 20px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 12px;
+            height: 12px;
+            background-color: #007bff;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            z-index: 1;
+        }
+        
+        .timeline-item.left {
+            left: 0;
+            text-align: right;
+            padding-right: 30px;
+        }
+        
+        .timeline-item.left::before {
+            right: -6px;
+        }
+        
+        .timeline-item.right {
+            left: 50%;
+            text-align: left;
+            padding-left: 30px;
+        }
+        
+        .timeline-item.right::before {
+            left: -6px;
+        }
+        
+        .timeline-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .timeline-content h3 {
+            margin-bottom: 10px;
+        }
+        
+        .timeline-content span {
+            font-size: 14px;
+            color: #888;
+        }
+            

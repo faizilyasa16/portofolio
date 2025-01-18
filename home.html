@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="w-100 d-flex justify-content-between align-items-center" style="height: 100px; background-color: #f5f5f5;">
+        <a href="#" class="text-decoration-none text-dark mx-4 fs-3" style="font-family: 'gameFont';">Faiz Ilyasa F</a>
+        <nav>
+            <ul class="d-flex list-unstyled m-0 me-4">
+                <li class="mx-3"><a href="#" class="text-decoration-none text-dark">Home</a></li>
+                <li class="mx-3"><a href="#" class="text-decoration-none text-dark">About</a></li>
+                <li class="mx-3"><a href="#" class="text-decoration-none text-dark">Portofolio</a></li>
+                <li class="mx-3"><a href="#" class="text-decoration-none text-dark">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="background: linear-gradient(to bottom, #e0e0e0, #f5f5f5); padding: 100px 0 160px 0;">
+        <div class="container-fluid">
+            <div class="row justify-content-center " style="padding-top: 100px;">
+                <div class="col-md-6 d-flex justify-content-center align-items-center flex-column text-center">
+                    <!-- Gambar Profile -->
+                    <div class="mb-4">
+                        <img src="img/faiz.png" alt="Profile picture of Faiz Ilyasa Feriadi" class="rounded-circle shadow-lg" style="width: 300px; height: 300px; transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <!-- Nama dan Deskripsi -->
+                    <div>
+                        <p class="fs-4 text-dark" style="font-family: 'gameFont';">Faiz Ilyasa Feriadi  | 
+                            <span class="fs-3 text-dark mt-2" style="font-family: 'textGame';" id="job-title"></span>
+                        </p>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+    </main>
+            <!-- Animasi / Efek Tambahan -->
+            <div class="wave-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#f5f5f5" fill-opacity="1" d="M0,192L34.3,181.3C68.6,171,137,149,206,165.3C274.3,181,343,235,411,224C480,213,549,139,617,122.7C685.7,107,754,149,823,176C891.4,203,960,213,1029,197.3C1097.1,181,1166,139,1234,117.3C1302.9,96,1371,96,1406,96L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
+                </svg>
+            </div>
+
+
+
+    <main class="pt-5" style=" position: relative; z-index:-1;">
+        <div class="container-fluid">
+                <!-- Langit Bintang -->
+        <div class="starry-sky">
+            <!-- Tambahkan bintang menggunakan JS atau manual di sini -->
+            <div class="star" style="top: 20%; left: 10%;" data-size="large"></div>
+            <div class="star" style="top: 10%; left: 50%;" data-size="large"></div>
+            <div class="star" style="top: 60%; left: 80%;" data-size="large"></div>
+            <div class="star" style="top: 80%; left: 20%;" data-size="large"></div>
+            <div class="star" style="top: 30%; left: 40%;" data-size="medium"></div>
+            <!-- Tambahkan lebih banyak bintang dengan posisi acak -->
+        </div>
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-center align-items-center gap-5">
+                        <img src="img/faiz.jpeg" alt="Profile picture of Faiz Ilyasa Feriadi" class="rounded-circle" style="width: 300px; height: 300px; z-index: 9999;">
+                        <div class="ms-4 text-start text-dark-emphasis">
+                            <h1 class="fw-bold mb-3 judul-gradient" style="font-family: 'gameFont';">About Me</h1>
+                            <p class="fw-semibold text-gradient" style="font-family: 'textGame';">
+                                Hi, I'm <span class="fw-bold">Faiz Ilyasa Feriadi</span>, a student at <span class="fw-bold">Universitas Bina Sarana Informatika</span>, majoring in <span class="fw-bold">System Information</span>. I aspire to become a Web Developer, focusing on frontend, backend, or full-stack development. I'm passionate about building interactive, user-friendly websites and always excited to learn new technologies in the ever-evolving world of web development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex flex-column align-items-center text-dark-emphasis">
+                        <h1 class=" mb-3 judul-gradient" style="font-family: 'gameFont'; ">Skills</h1>
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <div class="skill-item mx-2 my-2">
+                                <div class="skill-box">
+                                    <img src="img/html.png" alt="HTML Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
+                                    <span>HTML</span>
+                                </div>
+                            </div>
+                            <div class="skill-item mx-2 my-2">
+                                <div class="skill-box">
+                                    <img src="img/css.png" alt="CSS Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                            <div class="skill-item mx-2 my-2">
+                                <div class="skill-box">
+                                    <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="skill-item mx-2 my-2">
+                                <div class="skill-box">
+                                    <img src="img/php.png" alt="PHP Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
+                                    <span>PHP</span>
+                                </div>
+                            </div>
+                            <div class="skill-item mx-2 my-2">
+                                <div class="skill-box">
+                                    <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
+                                    <span>Bootstrap</span>
+                                </div>
+                            </div>
+                            <div class="skill-item mx-2 my-2">
+                                <div class="skill-box">
+                                    <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
+                                    <span>Laravel</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12" style="padding-top: 200px;">
+                    <div class="d-flex flex-column align-items-center text-dark-emphasis">
+                        <h1 class="fw-bold mb-3 judul-gradient" style="font-family: 'gameFont';">Education</h1>
+                        <div class="timeline">
+                            <div class="timeline-item right">
+                                <div class="timeline-content">
+                                    <h3 class="fw-bold" style="font-family: 'gameFont';">SMAS Future Gate</h3>
+                                    <p class="fw-semibold" style="font-family: 'textGame';">Science Major</p>
+                                    <span style="font-family: 'textGame';">2016 - 2019</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item left">
+                                <div class="timeline-content">
+                                    <h3 class="fw-bold" style="font-family: 'gameFont';">Universitas Bina Sarana Informatika</h3>
+                                    <p class="fw-semibold" style="font-family: 'textGame';">Bachelor's Degree in System Information</p>
+                                    <span style="font-family: 'textGame';">2019 - 2023</span>
+                                </div>
+                            </div>
+
+                            <!-- Tambahkan lebih banyak item timeline jika diperlukan -->
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        </div>
+    </main>
+
+    
+    <footer class="mt-5">
+        <div class="w-100 d-flex justify-content-center align-items-center" style="height: 100px; background-color: #f5f5f5;">
+            <p class="m-0 text-dark" style="font-family: 'textGame';">Copyright &copy; 2023 by Faiz Ilyasa F</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
