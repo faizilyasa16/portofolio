@@ -16,10 +16,7 @@ main {
     align-items: center;
 }
 
-img {
-    border: 5px solid #ccc; /* Memberikan border opsional */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan opsional */
-}
+
 .judul-gradient {
     font-family: 'gameFont';  /* Ganti dengan font yang sesuai */
     font-size: 36px;
@@ -38,7 +35,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    background: linear-gradient(to bottom, #000000, #1e3c72);
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
@@ -47,11 +44,15 @@ body {
 }
 
 .starry-sky {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: fixed; /* Tetap di tempat meskipun halaman digulir */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Lebar penuh viewport */
+    height: 100vh; /* Tinggi penuh viewport */
     overflow: hidden;
+    z-index: -999999999999999999999999; /* Di belakang elemen lain */
 }
+
 
 .star {
     position: absolute;
@@ -61,6 +62,7 @@ body {
     box-shadow: 0 0 10px #fff;
     border-radius: 50%;
     animation: twinkle 2s infinite;
+    z-index: -100;
 }
 
 .star[data-size="large"] {
@@ -199,4 +201,128 @@ body {
             font-size: 14px;
             color: #888;
         }
-            
+        .blackhole-frame {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 60%, transparent 70%),
+                        radial-gradient(circle, rgba(255, 165, 0, 0.7) 40%, rgba(255, 69, 0, 0.6) 70%, rgba(0, 0, 0, 0.8) 100%);
+            box-shadow: 0 0 80px rgba(255, 165, 0, 0.8), 
+                        0 0 150px rgba(255, 69, 0, 0.7), 
+                        0 0 300px rgba(0, 0, 0, 1) inset;
+            padding: 10px; /* Adjust padding for a stronger glow effect */
+        }
+        @media (max-width: 768px) {
+            .cloud-atas {
+                width: 100%;
+                object-fit: cover;
+                position: relative;
+                bottom: 100px;
+            }
+        }
+        .cloud-atas {
+            height: auto;
+            object-fit: cover;
+            z-index: 999;
+            margin-top: 100px;
+            position: relative;
+            top: 300px;
+        }
+        .cloud-bawah {
+            height: auto;
+            object-fit: cover;
+            z-index: 999;
+            position: relative;
+            bottom: 300px;
+            width: 100%; /* Ensures full width responsiveness */
+        }
+        
+        @media (max-width: 1103px) {
+            .cloud-bawah {
+                top: -180px; /* Adjust top positioning for smaller screens */
+                margin-top: 50px; /* Reduce margin for smaller screens */
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .cloud-bawah {
+                top: -150px; /* Adjust top positioning for smaller screens */
+                margin-top: 50px; /* Reduce margin for smaller screens */
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .cloud-bawah {
+                top: -100px; /* Further adjust top positioning for very small screens */
+                margin-top: 30px; /* Further reduce margin for very small screens */
+            }
+        }
+        
+        @media (max-width: 1103px) {
+            .cloud-atas {
+                top: 150px; /* Adjust top positioning for smaller screens */
+                margin-top: 50px; /* Reduce margin for smaller screens */
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .cloud-atas {
+                top: 150px; /* Adjust top positioning for smaller screens */
+                margin-top: 50px; /* Reduce margin for smaller screens */
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .cloud-atas {
+                top: 100px; /* Further adjust top positioning for very small screens */
+                margin-top: 30px; /* Further reduce margin for very small screens */
+            }
+        }
+        .responsive-layout {
+            display: flex;
+            gap: 5rem; /* Menjaga jarak antara elemen */
+        }
+        
+        @media (max-width: 768px) {
+            .responsive-layout {
+                flex-direction: column; /* Mengubah arah flex menjadi kolom */
+                gap: 2rem; /* Mengurangi jarak antar elemen */
+            }
+        
+            .responsive-layout img {
+                margin-bottom: 1rem; /* Menambahkan margin bawah untuk jarak antara gambar dan teks */
+            }
+        
+            .responsive-layout .ms-4 {
+                margin-left: 0; /* Menghapus margin kiri pada layar kecil */
+            }
+        
+            .responsive-layout .text-start {
+                text-align: center; /* Menyelaraskan teks ke tengah pada layar kecil */
+            }
+        }
+        
+        @media (max-width: 1399px) {
+            .responsive-layout {
+                flex-direction: column; /* Mengubah arah flex menjadi kolom */
+                gap: 2rem; /* Mengurangi jarak antar elemen */
+            }
+        
+            .responsive-layout img {
+                margin-bottom: 1rem; /* Menambahkan margin bawah untuk jarak antara gambar dan teks */
+            }
+        
+            .responsive-layout .ms-4 {
+                margin-left: 0; /* Menghapus margin kiri pada layar kecil */
+            }
+        
+            .responsive-layout .text-start {
+                text-align: center; /* Menyelaraskan teks ke tengah pada layar kecil */
+            }
+            .responsive-page {
+                text-align: center;
+            }
+        }
+        

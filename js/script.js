@@ -1,11 +1,11 @@
 const starrySky = document.querySelector('.starry-sky');
-const totalStars = 30; // Jumlah total bintang yang diinginkan
+const totalStars = 200; // Tingkatkan jumlah bintang jika perlu
 
 for (let i = 0; i < totalStars; i++) {
     const star = document.createElement('div');
     star.classList.add('star');
     
-    // Posisi acak untuk setiap bintang
+    // Tentukan posisi acak untuk setiap bintang
     const topPosition = Math.random() * 100;
     const leftPosition = Math.random() * 100;
 
@@ -19,6 +19,7 @@ for (let i = 0; i < totalStars; i++) {
 
     starrySky.appendChild(star);
 }
+
     // Array untuk berbagai pekerjaan
     const jobTitles = ["UI/UX Designer", "Web Developer", "Front End Developer"];
     let index = 0;
