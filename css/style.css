@@ -36,6 +36,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #000000, #1e3c72);
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
@@ -99,6 +100,20 @@ body {
         .star[data-size="large"] {
             width: 6px;
             height: 6px;
+        }
+
+        .blackhole-frame {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 60%, transparent 70%),
+                        radial-gradient(circle, rgba(255, 165, 0, 0.7) 40%, rgba(255, 69, 0, 0.6) 70%, rgba(0, 0, 0, 0.8) 100%);
+            box-shadow: 0 0 80px rgba(255, 165, 0, 0.8), 
+                        0 0 150px rgba(255, 69, 0, 0.7), 
+                        0 0 300px rgba(0, 0, 0, 1) inset;
+            padding: 10px; /* Adjust padding for a stronger glow effect */
         }
         .skill-item {
             display: flex;
@@ -214,72 +229,7 @@ body {
                         0 0 300px rgba(0, 0, 0, 1) inset;
             padding: 10px; /* Adjust padding for a stronger glow effect */
         }
-        @media (max-width: 768px) {
-            .cloud-atas {
-                width: 100%;
-                object-fit: cover;
-                position: relative;
-                bottom: 100px;
-            }
-        }
-        .cloud-atas {
-            height: auto;
-            object-fit: cover;
-            z-index: 999;
-            margin-top: 100px;
-            position: relative;
-            top: 300px;
-        }
-        .cloud-bawah {
-            height: auto;
-            object-fit: cover;
-            z-index: 999;
-            position: relative;
-            bottom: 300px;
-            width: 100%; /* Ensures full width responsiveness */
-        }
-        
-        @media (max-width: 1103px) {
-            .cloud-bawah {
-                top: -180px; /* Adjust top positioning for smaller screens */
-                margin-top: 50px; /* Reduce margin for smaller screens */
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .cloud-bawah {
-                top: -150px; /* Adjust top positioning for smaller screens */
-                margin-top: 50px; /* Reduce margin for smaller screens */
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .cloud-bawah {
-                top: -100px; /* Further adjust top positioning for very small screens */
-                margin-top: 30px; /* Further reduce margin for very small screens */
-            }
-        }
-        
-        @media (max-width: 1103px) {
-            .cloud-atas {
-                top: 150px; /* Adjust top positioning for smaller screens */
-                margin-top: 50px; /* Reduce margin for smaller screens */
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .cloud-atas {
-                top: 150px; /* Adjust top positioning for smaller screens */
-                margin-top: 50px; /* Reduce margin for smaller screens */
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .cloud-atas {
-                top: 100px; /* Further adjust top positioning for very small screens */
-                margin-top: 30px; /* Further reduce margin for very small screens */
-            }
-        }
+
         .responsive-layout {
             display: flex;
             gap: 5rem; /* Menjaga jarak antara elemen */
@@ -318,11 +268,61 @@ body {
                 margin-left: 0; /* Menghapus margin kiri pada layar kecil */
             }
         
-            .responsive-layout .text-start {
-                text-align: center; /* Menyelaraskan teks ke tengah pada layar kecil */
-            }
+        
             .responsive-page {
                 text-align: center;
+        
             }
         }
-        
+.clouds 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+.clouds img {
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    animation: animate calc(3s * var(--i)) linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    25%,75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(3);
+    }
+}
+section {
+    position: relative; /* Untuk posisi pseudo-element relatif terhadap elemen ini */
+    padding: 50px 20px;
+    overflow: hidden; /* Mencegah elemen before keluar dari section */
+    background-color: #fff;
+}
+
+
+.landing::before {
+    content: ""; /* Wajib ada untuk pseudo-element */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), transparent);
+    z-index: 5; /* Menempatkan di bawah konten */
+}
+.landing {
+    padding-bottom: 200px;
+}

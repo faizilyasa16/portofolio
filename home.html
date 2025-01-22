@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-                    <!-- Langit Bintang -->
+        
+    
+    <!-- Langit Bintang -->
         <div class="starry-sky">
             <!-- Tambahkan bintang menggunakan JS atau manual di sini -->
             <div class="star" style="top: 20%; left: 10%;" data-size="large"></div>
@@ -20,13 +22,13 @@
             <!-- Tambahkan lebih banyak bintang dengan posisi acak -->
         </div>
 
-        <header class="w-100 d-flex justify-content-center align-items-center" style="z-index: 999; position: relative;">
-            <img src="img/header1.png" alt="" class="w-100" style="height: auto; object-fit: cover; filter: brightness(0.8) contrast(0.7);">
-            <nav style="position: absolute; left: 50%; transform: translate(-50%, -100%);">
-                <ul class="d-flex list-unstyled m-0 me-4" style="gap: 100px;">
+        <header class="w-100 d-flex justify-content-center align-items-center " style="z-index: 999;">
+            <img src="img/header1.png" alt="" class="w-100 header-img" style="height: auto; object-fit: cover; filter: brightness(0.8) contrast(0.7);">
+            <nav class="header-nav " style="position: absolute; left: 50%; transform: translate(-50%, -100%);">
+                <ul class="d-flex list-unstyled m-0 me-4 header-menu" style="gap: 100px;">
                     <li><a href="#" class="text-decoration-none text-light fs-5">Home</a></li>
                     <li><a href="#" class="text-decoration-none text-light fs-5">About</a></li>
-                    <li><a href="#" class="text-decoration-none text-light fs-5">Education</a></li>
+                    <li><a href="#" class="text-decoration-none text-light fs-5">Services</a></li>
                     <li><a href="#" class="text-decoration-none text-light fs-5">Portfolio</a></li>
                 </ul>
             </nav>
@@ -37,7 +39,7 @@
         <path fill="#A9A9A9" fill-opacity="1" d="M0,32L120,69.3C240,107,480,181,720,181.3C960,181,1200,107,1320,69.3L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
       </svg> -->
     
-      <main style="position: relative; z-index: 1; padding-top: 100px;">
+      <main class="landing" style="position: relative; z-index: 1; padding-top: 100px; padding-bottom: 60%;">
         <div class="container">
             <div class="row align-items-center">
                 <!-- Profile Picture on the left -->
@@ -83,94 +85,108 @@
                 
             </div>
         </div>
+        <div class="clouds">
+            <img src="img/cloud5.png" alt="" style="--i:1;" >
+            <img src="img/cloud2.png" alt="" style="--i:2;" >
+            <img src="img/cloud3.png" alt="" style="--i:3;" >
+            <img src="img/cloud4.png" alt="" style="--i:4;" >
+            <img src="img/cloud5.png" alt="" style="--i:5;" >
+        </div>
+
+        
+
     </main>
-    
-    <img src="img/awan.png" alt="" class="w-100 cloud-atas" >
-        <main class="cloud-isi" style="background: linear-gradient(to bottom, #214177,#EDF9FC ); padding:100px  0 160px 0;  z-index: -3; ">
-        <div class="container-fluid px-5 " style="padding-top: 200px;">
-            <div class="row">
-                <div class="col-md-6 responsive-section">
-                    <div class="d-flex justify-content-center align-items-center gap-5 responsive-layout">
-                        <img src="img/faiz.jpeg" alt="Profile picture of Faiz Ilyasa Feriadi" class="rounded-circle" style="width: 300px; height: 300px; z-index: 9999;">
-                        <div class="ms-4 text-start text-dark-emphasis">
-                            <h1 class="fw-bold mb-3 judul-gradient responsive-page" style="font-family: 'gameFont';">About Me</h1>
-                            <p class="fw-semibold text-gradient responsive-page" style="font-family: 'textGame';">
-                                Hi, I'm <span class="fw-bold">Faiz Ilyasa Feriadi</span>, a student at <span class="fw-bold">Universitas Bina Sarana Informatika</span>, majoring in <span class="fw-bold">System Information</span>. I aspire to become a Web Developer, focusing on frontend, backend, or full-stack development. I'm passionate about building interactive, user-friendly websites and always excited to learn new technologies in the ever-evolving world of web development.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6">
-                    <div class="d-flex flex-column align-items-center text-dark-emphasis">
-                        <h1 class=" mb-3 judul-gradient" style="font-family: 'gameFont'; ">Skills</h1>
-                        <div class="d-flex flex-wrap justify-content-center">
-                            <div class="skill-item mx-2 my-2">
-                                <div class="skill-box">
-                                    <img src="img/html.png" alt="HTML Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
-                                    <span>HTML</span>
-                                </div>
-                            </div>
-                            <div class="skill-item mx-2 my-2">
-                                <div class="skill-box">
-                                    <img src="img/css.png" alt="CSS Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
-                                    <span>CSS</span>
-                                </div>
-                            </div>
-                            <div class="skill-item mx-2 my-2">
-                                <div class="skill-box">
-                                    <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-                            <div class="skill-item mx-2 my-2">
-                                <div class="skill-box">
-                                    <img src="img/php.png" alt="PHP Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
-                                    <span>PHP</span>
-                                </div>
-                            </div>
-                            <div class="skill-item mx-2 my-2">
-                                <div class="skill-box">
-                                    <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
-                                    <span>Bootstrap</span>
-                                </div>
-                            </div>
-                            <div class="skill-item mx-2 my-2">
-                                <div class="skill-box">
-                                    <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
-                                    <span>Laravel</span>
-                                </div>
+    <section >
+        <main class="cloud-isi" style="  z-index: -3; ">
+            <div class="container-fluid px-5 " style="padding-top: 200px;">
+                <div class="row">
+                    <div class="col-md-8 responsive-section">
+                        <div class="d-flex justify-content-center align-items-center gap-5 responsive-layout">
+                            <img src="img/faiz.jpeg" alt="Profile picture of Faiz Ilyasa Feriadi" class="rounded-circle" style="width: 300px; height: 300px; z-index: 9999;">
+                            <div class="mb-5 text-start text-dark-emphasis">
+                                <h1 class="fw-bold mb-3 judul-gradient responsive-page" style="font-family: 'gameFont';">About Me</h1>
+                                <p class="fw-semibold text-gradient responsive-page" style="font-family: 'textGame';">
+                                    Hi, I'm <span class="fw-bold">Faiz Ilyasa Feriadi</span>, a student at <span class="fw-bold">Universitas Bina Sarana Informatika</span>, majoring in <span class="fw-bold">System Information</span>. I aspire to become a Web Developer, focusing on frontend, backend, or full-stack development. I'm passionate about building interactive, user-friendly websites and always excited to learn new technologies in the ever-evolving world of web development.
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-12" style="padding-top: 200px; padding-bottom: 200px;">
-                    <div class="d-flex flex-column align-items-center text-dark-emphasis">
-                        <h1 class="fw-bold mb-3 judul-gradient" style="font-family: 'gameFont';">Education</h1>
-                        <div class="timeline">
-                            <div class="timeline-item right">
-                                <div class="timeline-content">
-                                    <h3 class="fw-bold" style="font-family: 'gameFont';">SMAS Future Gate</h3>
-                                    <p class="fw-semibold" style="font-family: 'textGame';">Science Major</p>
-                                    <span style="font-family: 'textGame';">2020 - 2023</span>
+                    
+                    <div class="col-md-4">
+                        <div class="d-flex flex-column align-items-center text-dark-emphasis">
+                            <h1 class=" mb-3 judul-gradient" style="font-family: 'gameFont'; ">Skills</h1>
+                            <div class="d-flex flex-wrap justify-content-center">
+                                <div class="skill-item mx-2 my-2">
+                                    <div class="skill-box">
+                                        <img src="img/html.png" alt="HTML Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
+                                        <span>HTML</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item mx-2 my-2">
+                                    <div class="skill-box">
+                                        <img src="img/css.png" alt="CSS Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
+                                        <span>CSS</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item mx-2 my-2">
+                                    <div class="skill-box">
+                                        <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
+                                        <span>JavaScript</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item mx-2 my-2">
+                                    <div class="skill-box">
+                                        <img src="img/php.png" alt="PHP Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
+                                        <span>PHP</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item mx-2 my-2">
+                                    <div class="skill-box">
+                                        <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
+                                        <span>Bootstrap</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item mx-2 my-2">
+                                    <div class="skill-box">
+                                        <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
+                                        <span>Laravel</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="timeline-item left">
-                                <div class="timeline-content">
-                                    <h3 class="fw-bold" style="font-family: 'gameFont';">Universitas Bina Sarana Informatika</h3>
-                                    <p class="fw-semibold" style="font-family: 'textGame';">Bachelor's Degree in System Information</p>
-                                    <span style="font-family: 'textGame';">2023 - Now</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="padding-top: 200px; ">
+                        <div class="d-flex flex-column align-items-center text-dark-emphasis">
+                            <h1 class="fw-bold mb-3 judul-gradient" style="font-family: 'gameFont';">Education</h1>
+                            <div class="timeline">
+                                <div class="timeline-item right">
+                                    <div class="timeline-content">
+                                        <h3 class="fw-bold" style="font-family: 'gameFont';">SMAS Future Gate</h3>
+                                        <p class="fw-semibold" style="font-family: 'textGame';">Science Major</p>
+                                        <span style="font-family: 'textGame';">2020 - 2023</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-item left">
+                                    <div class="timeline-content">
+                                        <h3 class="fw-bold" style="font-family: 'gameFont';">Universitas Bina Sarana Informatika</h3>
+                                        <p class="fw-semibold" style="font-family: 'textGame';">Bachelor's Degree in System Information</p>
+                                        <span style="font-family: 'textGame';">2023 - Now</span>
+                                    </div>
                                 </div>
                             </div>
-    
-                            <!-- Tambahkan lebih banyak item timeline jika diperlukan -->
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <img src="img/awan.png" alt="" class="w-100 cloud-bawah" style="height: auto; object-fit: cover; z-index: 999; position: relative; bottom:300px;">
+            
+        
+            
+        </main>
+    </section>
+
+
+
+
 
     
 
@@ -179,7 +195,7 @@
 
 
     
-    <footer class="mt-5">
+    <footer class="">
         <div class="w-100 d-flex justify-content-center align-items-center" style="height: 100px; background-color: #f5f5f5;">
             <p class="m-0 text-dark" style="font-family: 'textGame';">Copyright &copy; 2023 by Faiz Ilyasa F</p>
         </div>
