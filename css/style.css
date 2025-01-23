@@ -290,6 +290,22 @@ body {
     max-width: 100%;
     animation: animate calc(3s * var(--i)) linear infinite;
 }
+.awans
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+.awans img {
+    position: absolute;
+    margin-bottom: 2000px;
+    max-width: 100%;
+    animation: animate calc(3s * var(--i)) linear infinite;
+}
 
 @keyframes animate {
     0% {
@@ -310,10 +326,45 @@ section {
     position: relative; /* Untuk posisi pseudo-element relatif terhadap elemen ini */
     padding: 50px 20px;
     overflow: hidden; /* Mencegah elemen before keluar dari section */
-    background-color: #fff;
+    background-color: white;
+}
+.clouddown {
+    position: relative; /* Untuk posisi pseudo-element relatif terhadap elemen ini */
+    overflow: hidden; /* Mencegah elemen before keluar dari section */
+    background: linear-gradient(to bottom, #87CEEB, #1E90FF); /* Warna langit biru */
+    padding-bottom: 1000px;
 }
 
-
+.cloud-isi::before {
+    content: ""; /* Wajib ada untuk pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), transparent);
+    z-index: 5; /* Menempatkan di bawah konten */
+}
+.cloud-isi::after {
+    content: ""; /* Wajib ada untuk pseudo-element */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), transparent);
+    z-index: 5; /* Menempatkan di bawah konten */
+}
+.clouddown::before {
+    content: ""; /* Wajib ada untuk pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), transparent);
+    z-index: 5; /* Menempatkan di bawah konten */
+}
 .landing::before {
     content: ""; /* Wajib ada untuk pseudo-element */
     position: absolute;
@@ -325,4 +376,56 @@ section {
 }
 .landing {
     padding-bottom: 200px;
+}
+/* Atur dasar header */
+.header-img {
+    height: 300px;
+}
+
+.header-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Media query untuk layar tablet (lebar max 768px) */
+@media (max-width: 768px) {
+    .header-img {
+        height: 200px;
+    }
+
+    .header-nav ul {
+        gap: 50px; /* Kurangi jarak antar menu */
+    }
+
+    .header-nav a {
+        font-size: 16px;
+    }
+}
+
+/* Media query untuk layar ponsel (lebar max 480px) */
+@media (max-width: 480px) {
+    .header-img {
+        height: 150px;
+    }
+
+    .header-nav {
+        transform: translate(-50%, -50%);
+    }
+
+    .header-nav ul {
+        flex-direction: column; /* Tampilkan menu secara vertikal */
+        gap: 20px;
+    }
+
+    .header-nav a {
+        font-size: 14px;
+    }
 }
