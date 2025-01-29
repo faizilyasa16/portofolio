@@ -429,3 +429,28 @@ section {
         font-size: 14px;
     }
 }
+.skill-logo {
+    width: 50px; /* Ukuran gambar */
+    height: 50px; /* Ukuran gambar */
+    filter: grayscale(100%); /* Awalnya hitam putih */
+    transition: all 0.3s ease-in-out; /* Transisi halus */
+}
+
+.skill-logo:hover {
+    filter: grayscale(0%); /* Warna kembali */
+    transform: scale(1.1); /* Sedikit diperbesar saat hover */
+}
+.pemandangan {
+    position: relative; /* Supaya elemen-elemen di dalamnya bisa diatur posisinya */
+    overflow: hidden; /* Menghindari konten keluar dari batas section */
+    background: linear-gradient(to bottom, #1E90FF, #87CEEB); /* Background langit biru */
+    padding-bottom: 200px; /* Memberikan ruang bawah agar gambar bisa muncul */
+    padding-top: 1000px; /* Memberikan ruang atas agar konten tidak terlalu rapat dengan batas atas */
+    z-index: -1;
+}
+
+
+
+
+
+  
