@@ -443,13 +443,27 @@ section {
 .pemandangan {
     position: relative; /* Supaya elemen-elemen di dalamnya bisa diatur posisinya */
     overflow: hidden; /* Menghindari konten keluar dari batas section */
-    background: linear-gradient(to bottom, #1E90FF, #87CEEB); /* Background langit biru */
+    background-color: #1E90FF;
     padding-bottom: 200px; /* Memberikan ruang bawah agar gambar bisa muncul */
     padding-top: 1000px; /* Memberikan ruang atas agar konten tidak terlalu rapat dengan batas atas */
-    z-index: -1;
+    z-index: 1; /* Ubah z-index agar gambar tidak tertutup elemen lain */
 }
 
-
+.gunung {
+    background-image: url('../img/gunung.png'); /* Pastikan path gambar benar */
+    background-size: cover; /* Gambar akan menutupi seluruh area */
+    background-position: bottom; /* Posisikan gambar di bagian bawah */
+    width: 100%; /* Lebar gambar 100% dari parent */
+    height: 100vh; /* Atur tinggi gambar (sesuaikan dengan kebutuhan) */
+    position: absolute; /* Posisikan gambar secara absolut */
+    bottom: 0; /* Letakkan gambar di bagian bawah section */
+    left: 0; /* Letakkan gambar di bagian kiri section */
+    z-index: 1; /* Pastikan gambar berada di atas background */
+}
+.parallax-card {
+    transition: transform 0.1s linear;
+    will-change: transform;
+}
 
 
 

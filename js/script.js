@@ -53,3 +53,41 @@ for (let i = 0; i < totalStars; i++) {
 
     // Mulai dengan mengetik pekerjaan pertama
     typeJobTitle();
+
+    let lastScrollY = window.scrollY; // Save the previous scroll position
+    let moveY = -100; // Track the last transformation position
+    let threshold = 300; // Scroll threshold for when to start movement
+    let maxMoveY = 200; // Maximum movement in Y direction (adjust as needed)
+    
+    document.addEventListener("scroll", function () {
+        let card = document.querySelector(".parallax-card");
+    
+        if (card) {
+            let currentScrollY = window.scrollY; // Current scroll position
+            let direction = currentScrollY > lastScrollY ? -1 : 1; // Scroll down (-1) or up (1)
+    
+            // Only start moving the card after crossing the threshold
+            if (currentScrollY > threshold) {
+                if (direction === -1 && moveY > -maxMoveY) {
+                    // Scroll down, move the card up (but don't exceed the max negative limit)
+                    moveY -= 5;
+                } else if (direction === 1 && moveY < maxMoveY) {
+                    // Scroll up, move the card down (but don't exceed the max positive limit)
+                    moveY += 5;
+                }
+            } else {
+                // Before the threshold, keep the card in its normal position
+                moveY = 0;
+            }
+    
+            lastScrollY = currentScrollY; // Update the last scroll position
+    
+            card.style.transform = `translateY(${moveY}px)`;
+        }
+    });
+    
+    
+    
+
+
+
