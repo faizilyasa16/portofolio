@@ -55,36 +55,42 @@ for (let i = 0; i < totalStars; i++) {
     typeJobTitle();
 
     let lastScrollY = window.scrollY; // Save the previous scroll position
-    let moveY = -100; // Track the last transformation position
+    let moveY = -200; // Track the last transformation position
     let threshold = 300; // Scroll threshold for when to start movement
     let maxMoveY = 200; // Maximum movement in Y direction (adjust as needed)
     
     document.addEventListener("scroll", function () {
-        let card = document.querySelector(".parallax-card");
+        // Periksa apakah lebar layar lebih besar dari 768px (misalnya, untuk desktop)
+        if (window.innerWidth > 768) {
+            let card = document.querySelector(".parallax-card");
     
-        if (card) {
-            let currentScrollY = window.scrollY; // Current scroll position
-            let direction = currentScrollY > lastScrollY ? -1 : 1; // Scroll down (-1) or up (1)
+            if (card) {
+                let currentScrollY = window.scrollY; // Current scroll position
+                let direction = currentScrollY > lastScrollY ? -1 : 1; // Scroll down (-1) or up (1)
     
-            // Only start moving the card after crossing the threshold
-            if (currentScrollY > threshold) {
-                if (direction === -1 && moveY > -maxMoveY) {
-                    // Scroll down, move the card up (but don't exceed the max negative limit)
-                    moveY -= 5;
-                } else if (direction === 1 && moveY < maxMoveY) {
-                    // Scroll up, move the card down (but don't exceed the max positive limit)
-                    moveY += 5;
+                // Only start moving the card after crossing the threshold
+                if (currentScrollY > threshold) {
+                    if (direction === -1 && moveY > -maxMoveY) {
+                        moveY -= 5;
+                    } else if (direction === 1 && moveY < maxMoveY) {
+                        moveY += 5;
+                    }
+                } else {
+                    moveY = 0;
                 }
-            } else {
-                // Before the threshold, keep the card in its normal position
-                moveY = 0;
+    
+                lastScrollY = currentScrollY; // Update the last scroll position
+                card.style.transform = `translateY(${moveY}px)`;
             }
-    
-            lastScrollY = currentScrollY; // Update the last scroll position
-    
-            card.style.transform = `translateY(${moveY}px)`;
+        } else {
+            // Jika lebar layar lebih kecil atau sama dengan 768px, hapus transformasi
+            let card = document.querySelector(".parallax-card");
+            if (card) {
+                card.style.marginTop = "0px";
+            }
         }
     });
+    
     
     
     

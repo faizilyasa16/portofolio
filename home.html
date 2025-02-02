@@ -18,12 +18,7 @@
     
     <!-- Langit Bintang -->
         <div class="starry-sky">
-            <!-- Tambahkan bintang menggunakan JS atau manual di sini -->
-            <div class="star" style="top: 20%; left: 10%;" data-size="large"></div>
-            <div class="star" style="top: 10%; left: 50%;" data-size="large"></div>
-            <div class="star" style="top: 60%; left: 80%;" data-size="large"></div>
-            <div class="star" style="top: 80%; left: 20%;" data-size="large"></div>
-            <div class="star" style="top: 30%; left: 40%;" data-size="medium"></div>
+
             <!-- Tambahkan lebih banyak bintang dengan posisi acak -->
         </div>
 
@@ -49,18 +44,18 @@
         <div class="container">
             <div class="row align-items-center">
                 <!-- Profile Picture on the left -->
-                <div class="col-md-6 d-flex justify-content-center mb-4 mb-md-0">
+                <div class="col-lg-6 d-flex justify-content-center mb-4 mb-md-0">
                     <div class="blackhole-frame">
                         <img src="img/faiz.png" alt="Profile picture of Faiz Ilyasa Feriadi" 
                             style="width: 100%; max-width: 500px; height: auto; object-fit: cover; border-radius: 50%;">
                     </div>
                 </div>
                 
-                <!-- Name and Description on the right -->
-                <div class="col-md-6 text-start">
+            <!-- Name and Description on the right -->
+            <div class="col-lg-6 text-lg-start text-center">
                     <h5 class="fw-bold mb-3 judul-gradient pt-2" style="font-family: 'gameFont';">Hello, Its Me</h5>
                     <h1 class="fw-bold mb-3 judul-gradient" style="font-family: 'gameFont';">Faiz Ilyasa Feriadi</h1>
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex justify-content-lg-start justify-content-center align-items-center">
                         <p class="mb-0"><span class="fw-semibold text-gradient fs-4" style="font-family: 'textGame';">I am a</span></p>
                         <p class="fs-4 fw-semibold text-gradient mb-0 ms-2" style="font-family: 'textGame'; margin-top: 0;" id="job-title">
                             <span class="fw-bold text-gradient" style="font-family: 'textGame';" id="job"></span>
@@ -68,23 +63,9 @@
                     </div>
                     <p class="fw-semibold text-gradient pt-4" style="font-family: 'textGame'; font-size: 1.2rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsam sit molestias sequi recusandae eum, sunt doloremque! Facere ea veniam, rem ex obcaecati non, ipsum reiciendis dolore autem eius labore!</p>
                     <!-- Contact Section -->
-                    <div class="p-4">
-                        <h5 class="fw-bold text-center mb-4 text-gradient" style="font-family: 'gameFont';">Contact Me</h5>
-                        <div class="d-flex justify-content-center gap-4">
-                            <div class="d-flex justify-content-center gap-4">
-                                <!-- Social Media Logos (Bootstrap Icons) -->
-                                <a href="https://www.linkedin.com/in/faiz-ilyasa-feriadi-b57aa02a4" class="p-4 bg-light rounded-circle text-primary text-decoration-none d-inline-flex justify-content-center align-items-center" style="width: 80px; height: 80px; line-height: 1;">
-                                    <i class="bi bi-linkedin fs-1"></i>
-                                </a>
-                                <a href="https://github.com/faizilyasa16" class="p-4 bg-light rounded-circle text-dark text-decoration-none d-inline-flex justify-content-center align-items-center" style="width: 80px; height: 80px; line-height: 1;">
-                                    <i class="bi bi-github fs-1"></i>
-                                </a>
-                                <a href="https://www.instagram.com/happypakk/" class="p-4 bg-light rounded-circle text-info text-decoration-none d-inline-flex justify-content-center align-items-center" style="width: 80px; height: 80px; line-height: 1;">
-                                    <i class="bi bi-instagram fs-1"></i>
-                                </a>
-
-                            </div>
-                        </div>
+                    <div class="">
+                        <h5 class="fw-bold  mb-4 text-gradient" style="font-family: 'gameFont';">Resume / CV</h5>
+                        <a href="cv.pdf" class="btn-custom">Download CV</a>
                     </div>
                     
                 </div>
@@ -111,82 +92,72 @@
             <img src="img/clouddown5.png" alt="" style="--i:5;" >
         </div>
         <main class="cloud-isi" style="padding-bottom: 300px; ">
-            <div class="container-fluid px-5 " style="padding-top: 500px;">
+            <div class="container-fluid px-lg-5 px-3 " style="padding-top: 500px;">
                 <div class="row">
-                    <div class="col-md-9 responsive-section">
-                        <div class="d-flex justify-content-center align-items-center gap-5 responsive-layout">
-                            <img src="img/faiz.jpeg" alt="Profile picture of Faiz Ilyasa Feriadi" class="rounded-circle" style="width: 300px; height: 300px;">
-                            <div class="mb-5 text-start text-dark-emphasis">
-                                <h1 class="fw-bold mb-3 judul-gradient responsive-page" style="font-family: 'gameFont';">About Me</h1>
-                                <p class="fw-semibold text-gradient responsive-page" style="font-family: 'textGame';">
+                    <!-- About Me Section -->
+                    <div class="col-lg-9 col-12">
+                        <div class="d-flex flex-md-row flex-column justify-content-center align-items-center gap-md-5 gap-3 text-md-start text-center">
+                            <img src="img/faiz.jpeg" alt="Profile picture of Faiz Ilyasa Feriadi" class="rounded-circle" style="width: 250px; height: 250px;">
+                            <div class="mb-4">
+                                <h1 class="fw-bold mb-3 judul-gradient" style="font-family: 'gameFont';">About Me</h1>
+                                <p class="fw-semibold text-gradient" style="font-family: 'textGame';">
                                     Hi, I'm <span class="fw-bold">Faiz Ilyasa Feriadi</span>, a student at <span class="fw-bold">Universitas Bina Sarana Informatika</span>, majoring in <span class="fw-bold">System Information</span>. I aspire to become a Web Developer, focusing on frontend, backend, or full-stack development. I'm passionate about building interactive, user-friendly websites and always excited to learn new technologies in the ever-evolving world of web development.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-md-3">
+        
+                    <!-- Skills Section -->
+                    <div class="col-lg-3 col-12 mt-md-0 mt-4">
                         <div class="d-flex flex-column align-items-center text-dark-emphasis">
-                            <h1 class=" mb-3 judul-gradient" style="font-family: 'gameFont'; ">Skills</h1>
+                            <h1 class="mb-3 judul-gradient" style="font-family: 'gameFont';">Skills</h1>
                             <div class="d-flex flex-wrap justify-content-center">
-                                <div class="skill-item mx-2 my-2">
-                                    <div class="skill-box">
-                                        <img src="img/html.png" alt="HTML Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
-                                        <span>HTML</span>
-                                    </div>
+                                <div class="skill-item m-2">
+                                    <img src="img/html.png" alt="HTML Logo" class="skill-logo p-2" style="width: 80px; height: 80px;">
+                                    <span>HTML</span>
                                 </div>
-                                <div class="skill-item mx-2 my-2">
-                                    <div class="skill-box">
-                                        <img src="img/css.png" alt="CSS Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
-                                        <span>CSS</span>
-                                    </div>
+                                <div class="skill-item m-2">
+                                    <img src="img/css.png" alt="CSS Logo" class="skill-logo p-2" style="width: 80px; height: 80px;">
+                                    <span>CSS</span>
                                 </div>
-                                <div class="skill-item mx-2 my-2">
-                                    <div class="skill-box">
-                                        <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
-                                        <span>JavaScript</span>
-                                    </div>
+                                <div class="skill-item m-2">
+                                    <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo p-2" style="width: 80px; height: 80px;">
+                                    <span>JavaScript</span>
                                 </div>
-                                <div class="skill-item mx-2 my-2">
-                                    <div class="skill-box">
-                                        <img src="img/php.png" alt="PHP Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
-                                        <span>PHP</span>
-                                    </div>
+                                <div class="skill-item m-2">
+                                    <img src="img/php.png" alt="PHP Logo" class="skill-logo p-2" style="width: 80px; height: 80px;">
+                                    <span>PHP</span>
                                 </div>
-                                <div class="skill-item mx-2 my-2">
-                                    <div class="skill-box">
-                                        <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
-                                        <span>Bootstrap</span>
-                                    </div>
+                                <div class="skill-item m-2">
+                                    <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo p-2" style="width: 80px; height: 80px;">
+                                    <span>Bootstrap</span>
                                 </div>
-                                <div class="skill-item mx-2 my-2">
-                                    <div class="skill-box">
-                                        <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
-                                        <span>Laravel</span>
-                                    </div>
+                                <div class="skill-item m-2">
+                                    <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo p-2" style="width: 80px; height: 80px;">
+                                    <span>Laravel</span>
                                 </div>
-                                <div class="skill-item mx-2 my-2">
-                                    <div class="skill-box">
-                                        <img src="img/figma.png" alt="Figma Logo" class="skill-logo p-2" style="width: 100px; height: 100px;">
-                                        <span>Figma</span>
-                                    </div>
+                                <div class="skill-item m-2">
+                                    <img src="img/figma.png" alt="Figma Logo" class="skill-logo p-2" style="width: 80px; height: 80px;">
+                                    <span>Figma</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12" style="padding-top: 200px; ">
+        
+                    <!-- Education Section -->
+                    <div class="col-12 mt-5">
                         <div class="d-flex flex-column align-items-center text-dark-emphasis">
                             <h1 class="fw-bold mb-3 judul-gradient" style="font-family: 'gameFont';">Education</h1>
                             <div class="timeline">
                                 <div class="timeline-item right">
-                                    <div class="timeline-content">
+                                    <div class="timeline-content text-md-start text-center">
                                         <h3 class="fw-bold" style="font-family: 'gameFont';">SMAS Future Gate</h3>
                                         <p class="fw-semibold" style="font-family: 'textGame';">Science Major</p>
                                         <span style="font-family: 'textGame';">2020 - 2023</span>
                                     </div>
                                 </div>
                                 <div class="timeline-item left">
-                                    <div class="timeline-content">
+                                    <div class="timeline-content text-md-start text-center">
                                         <h3 class="fw-bold" style="font-family: 'gameFont';">Universitas Bina Sarana Informatika</h3>
                                         <p class="fw-semibold" style="font-family: 'textGame';">Bachelor's Degree in System Information</p>
                                         <span style="font-family: 'textGame';">2023 - Now</span>
@@ -196,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
             
 
             
@@ -220,125 +191,128 @@
             <img src="img/clouddown5.png" alt="" style="--i:5;" >
         </div>
         <div class="text-center" style="padding-top: 500px; ">
-            <h1 class="fw-bold mb-3 judul-gradient" style="font-family: 'gameFont';">Project Experience</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card p-3">
-                            <img src="img/simbok.jpeg" alt="" class="mx-auto" style="width: 100%; height: 100%;">
-                            <div class="card-body text-center">
-                                <h5 class="card-title fw-bold" style="font-family: 'gameFont';">Website Simbok</h5>
-                                <p class="card-text" style="font-family: 'textGame';">
-
-                                    Proyek ini bertujuan untuk belajar dan mengembangkan keterampilan membangun website berbagi resep yang sederhana, fungsional, dan mudah digunakan untuk memudahkan pengguna menemukan atau berbagi resep.                        
-                                </p>
-                                <div class="w-100" style="height: 2px; background-color: #007bff;"> </div>
-                                <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-3">
-                                    <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
-                                    <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
-                                    <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
-                                    <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo hover-effect">
-                                    <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
-                                    <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo hover-effect">
+ 
+                <h1 class="fw-bold mb-4 judul-gradient" style="font-family: 'gameFont';">Project Experience</h1>
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card p-3">
+                                <img src="img/simbok.jpeg" alt="" class="mx-auto" style="width: 100%; height: 100%;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold" style="font-family: 'gameFont';">Website Simbok</h5>
+                                    <p class="card-text" style="font-family: 'textGame';">
+                                        This project aims to learn and develop skills in building a simple, functional and easy-to-use recipe sharing website to make it easier for users to find or share recipes.                
+                                    </p>
+                                    <div class="w-100" style="height: 2px; background-color: #007bff;"> </div>
+                                    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-4">
+                                        <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
+                                        <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
+                                        <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
+                                        <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo hover-effect">
+                                        <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
+                                        <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo hover-effect">
+                                    </div>
                                 </div>
-                            </div>
-                            
-                        </div> 
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card p-3">
-                            <img src="img/sinteo.png" alt="" class="mx-auto" style="width: 100%; height: 100%;">
-                            <div class="card-body text-center">
-                                <h5 class="card-title fw-bold" style="font-family: 'gameFont';">Website Sinteo</h5>
-                                <p class="card-text" style="font-family: 'textGame';">
-
-                                    Proyek ini memudahkan pembelian dan penjualan tiket konser. Dengan tampilan responsif dan fitur sederhana, pengguna dapat mencari, memesan, atau menjual tiket konser favorit mereka dengan cepat dan aman.
-                                </p>
-                                <div class="w-100" style="height: 2px; background-color: #007bff;"> </div>
-                                <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-4">
-                                    <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
-                                    <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
-                                    <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
-                                    <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo hover-effect">
-                                    <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
-                                    <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo hover-effect">
+                                
+                            </div> 
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card p-3">
+                                <img src="img/sinteo.png" alt="" class="mx-auto" style="width: 100%; height: 100%;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold" style="font-family: 'gameFont';">Website Sinteo</h5>
+                                    <p class="card-text" style="font-family: 'textGame';">
+                                        This project makes it easy to buy and sell concert tickets. With a responsive interface and simple features, users can search, book, or sell their favorite concert tickets quickly and safely.
+                                    </p>
+                                    <div class="w-100" style="height: 2px; background-color: #007bff;"> </div>
+                                    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-3">
+                                        <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
+                                        <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
+                                        <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
+                                        <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo hover-effect">
+                                        <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
+                                        <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo hover-effect">
+                                    </div>
                                 </div>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card p-3">
-                            <img src="img/Mieodos.png" alt="" class="mx-auto" style="width: 100%; height: 100%;">
-
-                            <div class="card-body text-center">
-                                <h5 class="card-title fw-bold" style="font-family: 'gameFont'; ">Website Mie Odos</h5>
-                                <p class="card-text" style="font-family: 'textGame';">
-                                    Proyek ini dirancang untuk menampilkan berbagai menu yang dijual di toko Mie Odos. Pengguna dapat melihat informasi tentang pilihan menu, deskripsi, serta harga dengan tampilan yang sederhana dan mudah dipahami.
-                                </p>
-                                <div class="w-100" style="height: 2px; background-color: #007bff;"> </div>
-                                <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-3">
-                                    <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
-                                    <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
-                                    <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
-                                    <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo hover-effect">
-                                    <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo hover-effect">
+                            </div> 
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card p-3">
+                                <img src="img/Mieodos.png" alt="" class="mx-auto" style="width: 100%; height: 100%;">
+    
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold" style="font-family: 'gameFont'; ">Website Mie Odos</h5>
+                                    <p class="card-text" style="font-family: 'textGame';">
+                                        This project is designed to display various menus sold at the Mie Odos store. Users can see information about menu choices, descriptions, and prices with a simple and easy-to-understand display.
+                                    </p>
+                                    <div class="w-100" style="height: 2px; background-color: #007bff;"> </div>
+                                    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-3">
+                                        <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
+                                        <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
+                                        <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
+                                        <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo hover-effect">
+                                        <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
+                                        <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo hover-effect">
+                                    </div>
                                 </div>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card p-3">
-                            <img src="img/tokobunga.png" alt="" class="mx-auto" style="width: 100%; height: 100%;">
-
-                            <div class="card-body text-center">
-                                <h5 class="card-title fw-bold" style="font-family: 'gameFont'; font-size: 1.2rem;">Website Toko Bunga</h5>
-                                <p class="card-text" style="font-family: 'textGame';">
-                                    Website ini dirancang untuk menampilkan katalog bunga, harga, dan deskripsi produk. Pengguna dapat melakukan transaksi pembelian dengan mudah, termasuk pembayaran dan pengaturan pengiriman
-                                </p>
-                                <div class="w-100" style="height: 2px; background-color: #007bff;"> </div>
-                                <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-3">
-                                    <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
-                                    <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
-                                    <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
-                                    <img src="img/php.png" alt="PHP Logo" class="skill-logo hover-effect">
+                            </div> 
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card p-3">
+                                <img src="img/tokobunga.png" alt="" class="mx-auto" style="width: 100%; height: 100%;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold" style="font-family: 'gameFont'; font-size: 1.2rem;">Website Toko Bunga</h5>
+                                    <p class="card-text" style="font-family: 'textGame';">
+                                        This website is designed to display flower catalogues, prices and product descriptions. Users can easily make purchase transactions, including payment and delivery arrangements.
+                                    </p>
+                                    <div class="w-100 mt-4" style="height: 2px; background-color: #007bff;"> </div>
+                                    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-4">
+                                        <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
+                                        <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
+                                        <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
+                                        <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
+                                        <img src="img/php.png" alt="PHP Logo" class="skill-logo hover-effect">
+                                    </div>
                                 </div>
-                            </div>
-                        </div> 
+                            </div> 
+                        </div>
                     </div>
                 </div>
-            </div>
+
         </div>
     </section>
 
     <section class="pemandangan">
-        <div class="container vh-100 " >
-            <div class="row justify-content-center parallax-card">
-                <div class="col-md-12">
-                    <h1 class="fw-bold mb-3 text-center judul-gradient" style="font-family: 'gameFont';">Service</h1>
+        <div class="container vh-100">
+            <div class="row justify-content-center align-items-center parallax-card w-100">
+                <div class="col-12">
+                    <h1 class="fw-bold mb-4 text-center judul-gradient" style="font-family: 'gameFont';">Service</h1>
                 </div>
-                <div class="col-md-6 ">
-                    <div class="card p-3">
-                        <img src="img/uiux.png" alt="" class="mx-auto" style="width: 100px; height: 100px;">
-                        <div class="card-body text-center  ">
+                <div class="col-12 col-lg-6 mb-3">
+                    <div class="card p-3 w-100">
+                        <img src="img/uiux.png" alt="UI/UX Design" class="mx-auto img-fluid" style="width: 100px; height: 100px;">
+                        <div class="card-body text-center">
                             <h5 class="card-title fw-bold" style="font-family: 'gameFont';">UI / UX Design</h5>
                             <p class="card-text" style="font-family: 'textGame';">
-                                Desain website yang sesuai kebutuhan, user-friendly, dan menarik. Fokus pada kenyamanan pengguna dengan desain responsif.                          </p>
+                                Design a website that suits your needs, is user-friendly, and attractive. Focus on user convenience with responsive design.
+                            </p>
                         </div>
-                    </div> 
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card  p-3">
-                        <img src="img/web.png" alt="" class="mx-auto" style="width: 100px; height: 100px;">
+                <div class="col-12 col-lg-6 mb-3">
+                    <div class="card p-3 w-100">
+                        <img src="img/web.png" alt="Web Development" class="mx-auto img-fluid" style="width: 100px; height: 100px;">
                         <div class="card-body text-center">
                             <h5 class="card-title fw-bold" style="font-family: 'gameFont';">Web Development</h5>
                             <p class="card-text" style="font-family: 'textGame';">
-                                Membangun website dengan teknologi terkini dan metode terbaik. Desain yang fleksibel, performa maksimal, dan kode yang rapi.
+                                Building websites with the latest technology and the best methods. Flexible design, maximum performance, and clean code.
                             </p>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>
+        
             <div class="gunung">
             </div>
     </section>

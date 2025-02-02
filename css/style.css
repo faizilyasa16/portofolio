@@ -21,13 +21,13 @@ main {
     font-family: 'gameFont';  /* Ganti dengan font yang sesuai */
     font-size: 36px;
     font-weight: bold;
-    background: linear-gradient(to right, #FFD700, #FFB347); /* Gradasi dari Kuning ke Oranye */
+    background: linear-gradient(to right,#FFB347 , #FFD700); /* Gradasi dari Kuning ke Oranye */
     -webkit-background-clip: text;
     color: transparent;
 }
 .text-gradient {
     font-family: 'gameFont';  /* Ganti dengan font yang sesuai */
-    background: linear-gradient(to right, #FFD700, #FFB347); /* Gradasi dari Kuning ke Oranye */
+    background: linear-gradient(to right, #FFB347 , #FFD700); /* Gradasi dari Kuning ke Oranye */
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -252,6 +252,38 @@ body {
             .responsive-layout .text-start {
                 text-align: center; /* Menyelaraskan teks ke tengah pada layar kecil */
             }
+            .timeline::before {
+                left: 50% !important; /* Garis tengah dipaksa di tengah */
+              }
+            
+              .timeline-item {
+                width: 100% !important; /* Item memenuhi lebar layar */
+                padding: 20px 0 !important; /* Reset padding */
+              }
+            
+              .timeline-item.left {
+                text-align: left !important; /* Reset alignment kiri */
+                padding-right: 0 !important;
+                left: 0;
+              }
+            
+              .timeline-item.right {
+                left: 0 !important; /* Reset posisi 50% */
+                text-align: left !important; /* Reset alignment kanan */
+                padding-left: 0 !important;
+              }
+            
+              .timeline-item.left::before,
+              .timeline-item.right::before {
+                left: 50% !important; /* Bulatan dipaksa di tengah */
+                right: auto !important;
+                transform: translateX(-50%); /* Presisi posisi tengah */
+                top: -6px !important; /* Posisi di atas konten */
+              }
+            
+              .timeline-content {
+                margin-top: 20px; /* Spasi antara bulatan dan konten */
+              }
         }
         
         @media (max-width: 1399px) {
@@ -465,6 +497,31 @@ section {
     will-change: transform;
 }
 
+@media screen and (max-width: 768px) {
+    .parallax-card {
+        position: relative;
+        padding-bottom: 200px; /* Jika kamu ingin menambahkan padding bawah */
+        z-index: 99;
+    }
+}
+
+.btn-custom {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'gameFont';
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFB347;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    transform: scale(1.05);
+}
 
 
   
