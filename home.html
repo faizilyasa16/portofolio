@@ -22,15 +22,38 @@
             <!-- Tambahkan lebih banyak bintang dengan posisi acak -->
         </div>
 
-        <header class="w-100 d-flex justify-content-center align-items-center " style="z-index: 999;">
-            <img src="img/header1.png" alt="" class="w-100 header-img" style="height: auto; object-fit: cover; filter: brightness(0.8) contrast(0.7);">
-            <nav class="header-nav" style="position: absolute; left: 50%; transform: translate(-50%, -100%);">
-                <ul class="d-flex list-unstyled m-0 header-menu" style="gap: 100px;">
-                    <li><a href="#" class="text-decoration-none text-light fs-5">Home</a></li>
-                    <li><a href="#" class="text-decoration-none text-light fs-5">About</a></li>
-                    <li><a href="#" class="text-decoration-none text-light fs-5">Services</a></li>
-                    <li><a href="#" class="text-decoration-none text-light fs-5">Portfolio</a></li>
-                </ul>
+        <header class="container-fluid position-relative" style="z-index: 999;">
+            <img src="img/header1.png" alt="Header" class="w-100" style="height: auto; object-fit: cover; filter: brightness(0.8) contrast(0.7);">
+            
+            <!-- Navbar Bootstrap -->
+            <nav class="navbar navbar-expand-lg position-absolute top-0 start-0 w-100 jarak-nav">
+                <div class="container-fluid">
+                    <!-- Toggle Button -->
+                    <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon text-light" style="filter: invert(1);"></span>
+                    </button>
+                    <!-- Menu Items -->
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav" style="gap: 70px;">
+                            <li class="nav-item text-center">
+                                <a class="nav-link text-light fs-5 active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link text-light fs-5" href="#">About</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link text-light fs-5" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link text-light fs-5" href="#">Services</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link text-light fs-5" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         
@@ -61,11 +84,11 @@
                             <span class="fw-bold text-gradient" style="font-family: 'textGame';" id="job"></span>
                         </p>
                     </div>
-                    <p class="fw-semibold text-gradient pt-4" style="font-family: 'textGame'; font-size: 1.2rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsam sit molestias sequi recusandae eum, sunt doloremque! Facere ea veniam, rem ex obcaecati non, ipsum reiciendis dolore autem eius labore!</p>
+                    <p class="fw-semibold text-gradient pt-4" style="font-family: 'textGame'; font-size: 1.2rem;">Hi, I'm Faiz Ilyasa Feriadi! A passionate Web Developer who loves building interactive and user-friendly websites while constantly exploring new technologies. </p>
                     <!-- Contact Section -->
                     <div class="">
                         <h5 class="fw-bold  mb-4 text-gradient" style="font-family: 'gameFont';">Resume / CV</h5>
-                        <a href="cv.pdf" class="btn-custom">Download CV</a>
+                        <a href="CV_Faiz_Ilyasa.pdf" class="btn-custom">Download CV</a>
                     </div>
                     
                 </div>
@@ -95,7 +118,7 @@
             <div class="container-fluid px-lg-5 px-3 " style="padding-top: 500px;">
                 <div class="row">
                     <!-- About Me Section -->
-                    <div class="col-lg-9 col-12">
+                    <div class="col-lg-7 col-12">
                         <div class="d-flex flex-md-row flex-column justify-content-center align-items-center gap-md-5 gap-3 text-md-start text-center">
                             <img src="img/faiz.jpeg" alt="Profile picture of Faiz Ilyasa Feriadi" class="rounded-circle" style="width: 250px; height: 250px;">
                             <div class="mb-4">
@@ -108,7 +131,7 @@
                     </div>
         
                     <!-- Skills Section -->
-                    <div class="col-lg-3 col-12 mt-md-0 mt-4">
+                    <div class="col-lg-5 col-12 mt-md-0 mt-4">
                         <div class="d-flex flex-column align-items-center text-dark-emphasis">
                             <h1 class="mb-3 judul-gradient" style="font-family: 'gameFont';">Skills</h1>
                             <div class="d-flex flex-wrap justify-content-center">
@@ -190,12 +213,12 @@
             <img src="img/clouddown4.png" alt="" style="--i:4;" >
             <img src="img/clouddown5.png" alt="" style="--i:5;" >
         </div>
-        <div class="text-center" style="padding-top: 500px; ">
- 
-                <h1 class="fw-bold mb-4 judul-gradient" style="font-family: 'gameFont';">Project Experience</h1>
-                <div class="container">
-                    <div class="row g-4">
-                        <div class="col-12 col-md-6 col-lg-3">
+        <div class="text-center" style="padding-top: 600px; ">
+            <div class="awan-container"></div>
+                <h1 class="fw-bold mb-4 judul-gradient" style="font-family: 'gameFont'; ">Project Experience</h1>
+                <div class="container" >
+                    <div class="row g-4" >
+                        <div class="col-12 col-md-6 col-lg-3" style="z-index: 99;">
                             <div class="card p-3">
                                 <img src="img/simbok.jpeg" alt="" class="mx-auto" style="width: 100%; height: 100%;">
                                 <div class="card-body text-center">
@@ -203,7 +226,7 @@
                                     <p class="card-text" style="font-family: 'textGame';">
                                         This project aims to learn and develop skills in building a simple, functional and easy-to-use recipe sharing website to make it easier for users to find or share recipes.                
                                     </p>
-                                    <div class="w-100" style="height: 2px; background-color: #007bff;"> </div>
+                                    <div class="w-100 mt-4" style="height: 2px; background-color: #007bff;"> </div>
                                     <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-4">
                                         <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
                                         <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
@@ -212,11 +235,13 @@
                                         <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
                                         <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo hover-effect">
                                     </div>
+                                    <a href="#" class="btn btn-primary mt-3 w-100" style="font-family: 'gameFont';">View Project <i class="bi bi-arrow-right"></i></a>
+
                                 </div>
                                 
                             </div> 
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="col-12 col-md-6 col-lg-3" style="z-index: 99;">
                             <div class="card p-3">
                                 <img src="img/sinteo.png" alt="" class="mx-auto" style="width: 100%; height: 100%;">
                                 <div class="card-body text-center">
@@ -224,7 +249,7 @@
                                     <p class="card-text" style="font-family: 'textGame';">
                                         This project makes it easy to buy and sell concert tickets. With a responsive interface and simple features, users can search, book, or sell their favorite concert tickets quickly and safely.
                                     </p>
-                                    <div class="w-100" style="height: 2px; background-color: #007bff;"> </div>
+                                    <div class="w-100 mt-3" style="height: 2px; background-color: #007bff;"> </div>
                                     <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-3">
                                         <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
                                         <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
@@ -233,10 +258,12 @@
                                         <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
                                         <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo hover-effect">
                                     </div>
+                                    <a href="#" class="btn btn-primary mt-3 w-100" style="font-family: 'gameFont';">View Project <i class="bi bi-arrow-right"></i></a>
+
                                 </div>
                             </div> 
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="col-12 col-md-6 col-lg-3" style="z-index: 99;">
                             <div class="card p-3">
                                 <img src="img/Mieodos.png" alt="" class="mx-auto" style="width: 100%; height: 100%;">
     
@@ -245,8 +272,8 @@
                                     <p class="card-text" style="font-family: 'textGame';">
                                         This project is designed to display various menus sold at the Mie Odos store. Users can see information about menu choices, descriptions, and prices with a simple and easy-to-understand display.
                                     </p>
-                                    <div class="w-100" style="height: 2px; background-color: #007bff;"> </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-3">
+                                    <div class="w-100 mt-1" style="height: 2px; background-color: #007bff;"> </div>
+                                    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-2">
                                         <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
                                         <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
                                         <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
@@ -254,31 +281,32 @@
                                         <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
                                         <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo hover-effect">
                                     </div>
+                                    <a href="#" class="btn btn-primary mt-3 w-100" style="font-family: 'gameFont';">View Project <i class="bi bi-arrow-right"></i></a>
+
                                 </div>
                             </div> 
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="col-12 col-md-6 col-lg-3" style="z-index: 99;">
                             <div class="card p-3">
                                 <img src="img/tokobunga.png" alt="" class="mx-auto" style="width: 100%; height: 100%;">
                                 <div class="card-body text-center">
                                     <h5 class="card-title fw-bold" style="font-family: 'gameFont'; font-size: 1.2rem;">Website Toko Bunga</h5>
                                     <p class="card-text" style="font-family: 'textGame';">
-                                        This website is designed to display flower catalogues, prices and product descriptions. Users can easily make purchase transactions, including payment and delivery arrangements.
-                                    </p>
-                                    <div class="w-100 mt-4" style="height: 2px; background-color: #007bff;"> </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-4">
+                                        This website is designed to showcase flower catalogues, prices, and product descriptions. Users can easily browse, make purchases, and arrange payment and delivery with ease.                              </p>
+                                    <div class="w-100 mt-1" style="height: 2px; background-color: #007bff;"> </div>
+                                    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-2">
                                         <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
                                         <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
                                         <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
                                         <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
                                         <img src="img/php.png" alt="PHP Logo" class="skill-logo hover-effect">
                                     </div>
+                                    <a href="#" class="btn btn-primary mt-3 w-100" style="font-family: 'gameFont';">View Project <i class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div> 
                         </div>
                     </div>
                 </div>
-
         </div>
     </section>
 
@@ -328,13 +356,50 @@
 
 
 
-    <footer class="">
-        <div class="w-100 d-flex justify-content-center align-items-center" style="height: 100px; background-color: #8B4513; background-image: url('https://www.transparenttextures.com/patterns/soil-texture.png');">
-            <p class="m-0 text-white" style="font-family: 'textGame';">Copyright &copy; 2023 by Faiz Ilyasa F</p>
+    <div class="contact-page bg-dark text-white">
+        <div class="container" style="padding-top: 200px; padding-bottom: 100px;">
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h2 class="mb-4 judul-gradient" style="font-family: 'gameFont';">Contact Me</h2>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control transparent-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control transparent-input" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control transparent-input" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn  w-100" style="font-family: textGame;background: linear-gradient(to right,#FFB347 , #FFD700);">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <h1 class="text-center mt-5 judul-gradient" style="font-family: 'gameFont'; font-size: 25px;">My Social Media</h1>
+
+            <!-- Social Media Links -->
+            <div class="d-flex justify-content-center gap-4 mt-3">
+                <a href="https://www.linkedin.com/in/faiz-ilyasa-feriadi-b57aa02a4" class="social-link text-primary">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/faizilyasa16" class="social-link text-dark">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.instagram.com/happypakk/" class="social-link text-info">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+    
+        </div>
+    </div>
+    <footer class="footer-stone text-white">
+        <div class="container text-center">
+            <p class="m-0" style="font-family: textGame;">&copy; 2025 by Faiz Ilyasa Feriadi. All Rights Reserved.</p>
         </div>
     </footer>
     
 
     <script src="js/script.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

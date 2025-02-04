@@ -91,7 +91,45 @@ for (let i = 0; i < totalStars; i++) {
         }
     });
     
+    document.addEventListener("DOMContentLoaded", function () {
+        const container = document.querySelector(".awan-container");
+        const jumlahAwan = 6; // Bisa diubah sesuai kebutuhan
+        const awanImages = ["img/awan_biasa.png", "img/awan_panjang.png", "img/awan_tebal.png"];
+        const posisiAwan = [];
     
+        for (let i = 0; i < jumlahAwan; i++) {
+            let awan = document.createElement("img");
+            awan.src = awanImages[Math.floor(Math.random() * awanImages.length)];
+            awan.classList.add("awan");
+    
+            let randomX, randomY;
+            let terlaluDekat = true;
+    
+            while (terlaluDekat) {
+                randomX = Math.random() * (window.innerWidth - 150);
+                randomY = Math.random() * (window.innerHeight * 0.8); // Hanya sampai 80vh
+    
+                terlaluDekat = posisiAwan.some(pos => 
+                    Math.abs(pos.x - randomX) < 200 && Math.abs(pos.y - randomY) < 150
+                );
+            }
+    
+            posisiAwan.push({ x: randomX, y: randomY });
+    
+            let randomSize = Math.random() * 0.6 + 0.7; 
+            let randomSpeed = Math.random() * 10 + 5;
+    
+            awan.style.left = `${randomX}px`;
+            awan.style.top = `${randomY}px`;
+            awan.style.transform = `scale(${randomSize})`; 
+            awan.style.animationDuration = `${randomSpeed}s`;
+    
+            container.appendChild(awan);
+        }
+    });
+    
+    
+       
     
     
 

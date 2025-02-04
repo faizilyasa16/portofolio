@@ -65,17 +65,6 @@ body {
     animation: twinkle 2s infinite;
     z-index: -100;
 }
-
-.star[data-size="large"] {
-    width: 5px;
-    height: 5px;
-}
-
-.star[data-size="medium"] {
-    width: 4px;
-    height: 4px;
-}
-
 @keyframes twinkle {
     0%, 100% {
         opacity: 1;
@@ -397,6 +386,28 @@ section {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1), transparent);
     z-index: 5; /* Menempatkan di bawah konten */
 }
+.awan-container {
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: visible; /* Biar awan di luar layar tetap kelihatan */
+}
+
+.awan {
+    position: absolute;
+    width: 400px; /* Ukuran lebih besar biar variasi */
+    height: auto;
+    opacity: 1;
+    animation: gerak-awan linear infinite alternate;
+    z-index: 0;
+}
+
+@keyframes gerak-awan {
+    0% { transform: translateX(-20px); }
+    100% { transform: translateX(40px); }
+}
+
+
 .landing::before {
     content: ""; /* Wajib ada untuk pseudo-element */
     position: absolute;
@@ -409,58 +420,34 @@ section {
 .landing {
     padding-bottom: 200px;
 }
-/* Atur dasar header */
-.header-img {
-    height: 300px;
-}
-
-.header-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-}
-
-.header-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-}
-
-/* Media query untuk layar tablet (lebar max 768px) */
-@media (max-width: 768px) {
-    .header-img {
-        height: 200px;
+    /* Custom CSS */
+    .navbar {
+        background: transparent !important;
     }
-
-    .header-nav ul {
-        gap: 50px; /* Kurangi jarak antar menu */
+    .jarak-nav {
+        padding-top: 3%;
     }
-
-    .header-nav a {
-        font-size: 16px;
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 10px;
     }
-}
-
-/* Media query untuk layar ponsel (lebar max 480px) */
-@media (max-width: 480px) {
-    .header-img {
-        height: 150px;
+    
+    @media (min-width: 992px) {
+        .navbar-collapse {
+            background: transparent !important;
+            padding: 0 !important;
+        }
+        .navbar-toggler {
+            display: none !important;
+        }
     }
-
-    .header-nav {
-        transform: translate(-50%, -50%);
+    @media screen and (max-width: 500px) {
+        .jarak-nav {
+            padding-top: 0;
+        }
+        
     }
-
-    .header-nav ul {
-        flex-direction: column; /* Tampilkan menu secara vertikal */
-        gap: 20px;
-    }
-
-    .header-nav a {
-        font-size: 14px;
-    }
-}
 .skill-logo {
     width: 50px; /* Ukuran gambar */
     height: 50px; /* Ukuran gambar */
@@ -477,8 +464,7 @@ section {
     overflow: hidden; /* Menghindari konten keluar dari batas section */
     background-color: #1E90FF;
     padding-bottom: 200px; /* Memberikan ruang bawah agar gambar bisa muncul */
-    padding-top: 1000px; /* Memberikan ruang atas agar konten tidak terlalu rapat dengan batas atas */
-    z-index: 1; /* Ubah z-index agar gambar tidak tertutup elemen lain */
+    padding-top: 200px; /* Memberikan ruang atas agar konten tidak terlalu rapat dengan batas atas */
 }
 
 .gunung {
@@ -522,6 +508,55 @@ section {
 .btn-custom:hover {
     transform: scale(1.05);
 }
+.pemandangan::before {
+    content: ""; /* Wajib ada untuk pseudo-element */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #3e2723, transparent);
+    z-index: 10; /* Menempatkan di bawah konten */
+}
+.contact-page {
+    background: linear-gradient(to bottom, #3e2723, #5d4037, #4e342e);
+    box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.5);
+}
+    /* Transparent Input Fields */
+    .transparent-input {
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        color: white;
+        padding: 10px;
+    }
+    .transparent-input::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .transparent-input:focus {
+        background: rgba(255, 255, 255, 0.1);
+        outline: none;
+        color: white;
+        border-color: white;
+    }
 
-
-  
+    /* Social Media Links */
+    .social-link {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        border-radius: 50%;
+        font-size: 2rem;
+        text-decoration: none;
+        transition: 0.3s ease;
+    }
+    .social-link:hover {
+        transform: scale(1.1);
+    }
+    .footer-stone {
+        background: linear-gradient(to bottom, #4a4a4a, #3b3b3b, #2c2c2c);
+        box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
+        padding: 20px 0;
+    } 
