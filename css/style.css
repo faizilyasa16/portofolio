@@ -515,12 +515,82 @@ section {
     left: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, #3e2723, transparent);
+    background: linear-gradient(to top, #823F3B, transparent);
     z-index: 10; /* Menempatkan di bawah konten */
 }
 .contact-page {
-    background: linear-gradient(to bottom, #3e2723, #5d4037, #4e342e);
-    box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.5);
+    background: #823F3B;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Pastikan halaman penuh */
+    overflow: hidden;
+}
+
+.contact-page img {
+    position: absolute;
+    opacity: 0.8;
+    max-width: 200px; /* Hindari ukuran gambar yang terlalu besar */
+}
+
+.contact-page .container {
+    position: relative;
+    z-index: 1; /* Pastikan konten tetap di atas gambar */
+}
+
+/* Penyesuaian posisi gambar */
+.contact-page img:nth-child(1) { 
+    top: 10%; 
+    left: 10%;
+}
+
+.contact-page img:nth-child(2) { 
+    top: 50%; 
+    left: 10%; 
+    transform: rotate(20deg); 
+}
+
+.contact-page img:nth-child(3) { 
+    top: 30%; 
+    right: 5%; 
+}
+
+.contact-page img:nth-child(4) { 
+    bottom: 10%; 
+    left: 5%; 
+    transform: rotate(-15deg); 
+}
+
+.contact-page img:nth-child(5) { 
+    bottom: 20%; 
+    right: 10%;
+}
+
+.contact-page img:nth-child(6) { 
+    top: 10%; 
+    right: 20%; 
+    transform: scale(1.2);
+}
+
+.contact-page img:nth-child(7) { 
+    top: 20%; /* Perbaiki posisi dari bottom: 80% */
+    left: 60%; 
+    transform: rotate(10deg);
+}
+
+.contact-page img:nth-child(8) { 
+    bottom: 5%; 
+    right: 20%; 
+}
+@media (max-width: 900px) {
+    .contact-page img[src*="dino"], 
+    .contact-page img[src*="ikan"] {
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .contact-page img[src*="foot"] {
+        display: none;
+    }
 }
     /* Transparent Input Fields */
     .transparent-input {
@@ -555,6 +625,7 @@ section {
     .social-link:hover {
         transform: scale(1.1);
     }
+
     .footer-stone {
         background: linear-gradient(to bottom, #4a4a4a, #3b3b3b, #2c2c2c);
         box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
