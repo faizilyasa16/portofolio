@@ -94,7 +94,7 @@ for (let i = 0; i < totalStars; i++) {
     document.addEventListener("DOMContentLoaded", function () {
         const container = document.querySelector(".awan-container");
         const jumlahAwan = 6; // Bisa diubah sesuai kebutuhan
-        const awanImages = ["img/awan_biasa.png", "img/awan_panjang.png", "img/awan_tebal.png"];
+        const awanImages = ["img/awan_biasa.png", "img/awan_panjang.png", "img/awan_tebal.png", "img/awan_sedang.png"];
         const posisiAwan = [];
     
         for (let i = 0; i < jumlahAwan; i++) {

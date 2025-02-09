@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'gameFont';
-    src: url('../fonts/game.ttf') format('truetype');
+    src: url('../fonts/Fenix.ttf') format('truetype');
 }
 @font-face {
     font-family: 'textGame';
@@ -19,7 +19,7 @@ main {
 
 .judul-gradient {
     font-family: 'gameFont';  /* Ganti dengan font yang sesuai */
-    font-size: 36px;
+    font-size: 4rem;
     font-weight: bold;
     background: linear-gradient(to right,#FFB347 , #FFD700); /* Gradasi dari Kuning ke Oranye */
     -webkit-background-clip: text;
@@ -514,12 +514,12 @@ section {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100px;
-    background: linear-gradient(to top, #823F3B, transparent);
+    height: 120px;
+    background: linear-gradient(to top, #C77C4E 10%, transparent);
     z-index: 10; /* Menempatkan di bawah konten */
 }
 .contact-page {
-    background: #823F3B;
+    background: linear-gradient(to bottom, #C77C4E,#4A2C26 );
     position: relative;
     width: 100%;
     height: 100vh; /* Pastikan halaman penuh */
@@ -539,8 +539,8 @@ section {
 
 /* Penyesuaian posisi gambar */
 .contact-page img:nth-child(1) { 
-    top: 10%; 
-    left: 10%;
+    top: 15%; 
+    left: 5%;
 }
 
 .contact-page img:nth-child(2) { 
@@ -548,7 +548,6 @@ section {
     left: 10%; 
     transform: rotate(20deg); 
 }
-
 .contact-page img:nth-child(3) { 
     top: 30%; 
     right: 5%; 
@@ -566,7 +565,7 @@ section {
 }
 
 .contact-page img:nth-child(6) { 
-    top: 10%; 
+    top: 15%; 
     right: 20%; 
     transform: scale(1.2);
 }
@@ -581,7 +580,7 @@ section {
     bottom: 5%; 
     right: 20%; 
 }
-@media (max-width: 900px) {
+@media (max-width: 984px) {
     .contact-page img[src*="dino"], 
     .contact-page img[src*="ikan"] {
         display: none;
