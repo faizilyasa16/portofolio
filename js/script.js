@@ -71,7 +71,7 @@ for (let i = 0; i < totalStars; i++) {
                 // Only start moving the card after crossing the threshold
                 if (currentScrollY > threshold) {
                     if (direction === -1 && moveY > -maxMoveY) {
-                        moveY -= 5;
+                        moveY -= 10;
                     } else if (direction === 1 && moveY < maxMoveY) {
                         moveY += 5;
                     }

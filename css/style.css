@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: 'textGame';
-    src: url('../fonts/ci-gamedev.ttf') format('truetype');
+    src: url('../fonts/outfit.ttf') format('truetype');
 }
 nav a {
     font-family: 'gameFont';
@@ -16,7 +16,6 @@ main {
     align-items: center;
 }
 
-
 .judul-gradient {
     font-family: 'gameFont';  /* Ganti dengan font yang sesuai */
     font-size: 4rem;
@@ -26,10 +25,11 @@ main {
     color: transparent;
 }
 .text-gradient {
-    font-family: 'gameFont';  /* Ganti dengan font yang sesuai */
+    font-family: 'textGame';  /* Ganti dengan font yang sesuai */
     background: linear-gradient(to right, #FFB347 , #FFD700); /* Gradasi dari Kuning ke Oranye */
     -webkit-background-clip: text;
     color: transparent;
+    font-size: 1.3em;
 }
 body {
     margin: 0;
@@ -516,8 +516,8 @@ section {
 
 .btn-custom {
     display: inline-block;
-    padding: 10px 20px;
-    font-family: 'gameFont';
+    padding: 5px 20px;
+    font-family: 'textGame';
     font-size: 16px;
     font-weight: 600;
     color: #FFB347;
@@ -647,7 +647,13 @@ section {
     .social-link:hover {
         transform: scale(1.1);
     }
-
+    .instagram i {
+        background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    
     .footer-stone {
         background: linear-gradient(to bottom, #4a4a4a, #3b3b3b, #2c2c2c);
         box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
