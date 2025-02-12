@@ -35,21 +35,21 @@
                     </button>
                     <!-- Menu Items -->
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav" style="gap: 70px;">
+                        <ul class="navbar-nav">
                             <li class="nav-item text-center">
-                                <a class="nav-link text-light fs-2 active" href="#">Home</a>
+                                <a class="nav-link text-light active" href="#">Home</a>
                             </li>
                             <li class="nav-item text-center">
-                                <a class="nav-link text-light fs-2" href="#">About</a>
+                                <a class="nav-link text-light" href="#">About</a>
                             </li>
                             <li class="nav-item text-center">
-                                <a class="nav-link text-light fs-2" href="#">Portfolio</a>
+                                <a class="nav-link text-light" href="#">Portfolio</a>
                             </li>
                             <li class="nav-item text-center">
-                                <a class="nav-link text-light fs-2" href="#">Services</a>
+                                <a class="nav-link text-light" href="#">Services</a>
                             </li>
                             <li class="nav-item text-center">
-                                <a class="nav-link text-light fs-2" href="#">Contact</a>
+                                <a class="nav-link text-light" href="#">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -371,17 +371,30 @@
             <div class="row">
                 <div class="col-lg-6 mx-auto text-center">
                     <h2 class="mb-4 judul-gradient" style="font-family: 'gameFont';">Contact Me</h2>
-                    <form>
-                        <div class="mb-3">
-                            <input type="text" class="form-control transparent-input" placeholder="Your Name" required>
+
+                    <form name="faiz-ilyasa-contact-form">
+                        <div class="alert alert-success alert-dismissible fade show d-none success-alert" role="alert">
+                            <strong>Terima Kasih!</strong> Pesan Sudah di Terima
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                          </div>
+                        <div class="alert alert-danger alert-dismissible fade show d-none failed-alert" role="alert">
+                            <strong>Maaf!</strong> Pesan Gagal di Terima
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control transparent-input" placeholder="Your Email" required>
+                            <input type="text" class="form-control transparent-input" placeholder="Your Name" id="name" name="nama" required>
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control transparent-input" rows="4" placeholder="Your Message" required></textarea>
+                            <input type="email" class="form-control transparent-input" placeholder="Your Email" id="email" name="email" required>
                         </div>
-                        <button type="submit" class="btn  w-100" style="font-family: textGame;background: linear-gradient(to right,#FFB347 , #FFD700);">Send Message</button>
+                        <div class="mb-3">
+                            <textarea class="form-control transparent-input" rows="4" placeholder="Your Message" id="message" name="pesan" required></textarea>
+                        </div>
+                        <button type="submit" class="btn  w-100 btn-kirim" style="font-family: textGame;background: linear-gradient(to right,#FFB347 , #FFD700);">Send Message</button>
+                        <button class="btn d-none btn-loading w-100" style="font-family: textGame;background: linear-gradient(to right,#FFB347 , #FFD700);" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                            <span role="status">Loading...</span>
+                          </button>
                     </form>
                 </div>
             </div>
@@ -411,5 +424,35 @@
 
     <script src="js/script.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwl5YMAwsq2ZiAMJ4SUTtL4SUYxIj1qF-qMgfRS9VugHzWgQt_VrRvn70y5JBJ0uGlqMw/exec'
+        const form = document.forms['faiz-ilyasa-contact-form']
+        const btnKirim = document.querySelector('.btn-kirim')
+        const btnLoading = document.querySelector('.btn-loading')
+        const successAlert = document.querySelector('.success-alert')
+        const failedAlert = document.querySelector('.failed-alert')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          btnLoading.classList.toggle('d-none');
+          btnKirim.classList.toggle('d-none');
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                btnLoading.classList.toggle('d-none');
+                btnKirim.classList.toggle('d-none');
+                successAlert.classList.toggle('d-none');
+                form.reset();
+                console.log('Success!', response)
+            })
+            .catch(error => {
+                btnLoading.classList.toggle('d-none');
+                btnKirim.classList.toggle('d-none');
+                failedAlert.classList.toggle('d-none');
+                form.reset();
+                console.error('Error!', error.message)
+            })
+        })
+      </script>
 </body>
 </html>
