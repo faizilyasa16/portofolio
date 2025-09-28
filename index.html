@@ -21,7 +21,7 @@
             <!-- Tambahkan lebih banyak bintang dengan posisi acak -->
         </div>
 
-        <header class="container-fluid position-relative" id="home" style="z-index: 999;">
+        <header class="container-fluid position-relative"    style="z-index: 999;">
             <img src="img/header1.png" alt="Header" class="w-100" style="height: auto; object-fit: cover; filter: brightness(0.8) contrast(0.7);">
             
             <!-- Navbar Bootstrap -->
@@ -62,7 +62,7 @@
         <path fill="#A9A9A9" fill-opacity="1" d="M0,32L120,69.3C240,107,480,181,720,181.3C960,181,1200,107,1320,69.3L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
       </svg> -->
     
-      <main class="landing" style="position: relative; z-index: 1; padding-top: 100px; padding-bottom: 60%;">
+      <main class="landing" id="home" style="position: relative; z-index: 1; padding-top: 100px; padding-bottom: 60%;">
         <div class="container" >
             <div class="row align-items-center">
                 <!-- Profile Picture on the left -->
@@ -114,8 +114,8 @@
             <img src="img/clouddown5.png" alt="" style="--i:5;" >
         </div>
         <main class="cloud-isi" style="padding-bottom: 300px; ">
-            <div class="container-fluid px-lg-5 px-3 " style="padding-top: 500px;" id="about">
-                <div class="row">
+            <div class="container-fluid px-lg-5 px-3 " style="padding-top: 500px;" >
+                <div class="row"id="about">
                     <!-- About Me Section -->
                     <div class="col-lg-8 col-12">
                         <div class="d-flex flex-md-row flex-column justify-content-center align-items-center gap-md-5 gap-3 text-md-start text-center">
@@ -216,105 +216,245 @@
             <img src="img/clouddown4.png" alt="" style="--i:4;" >
             <img src="img/clouddown5.png" alt="" style="--i:5;" >
         </div>
-        <div class="text-center" style="padding-top: 600px; " id="project">
+        <div class="text-center" style="padding-top: 600px; " >
             <div class="awan-container"></div>
-                <h1 class="fw-bold mb-4 judul-gradient" style="font-family: 'gameFont'; ">Project Experience</h1>
-                <div class="container" >
-                    <div class="row g-4" >
-                        <div class="col-12 col-md-6 col-lg-3" style="z-index: 99;">
+                <h3 class="fw-bold mb-4 judul-gradient" style="font-family: 'gameFont'; "  id="project">Project Experience</h3>
+                <div class="container">
+                    <div class="row g-4 justify-content-center" >
+                        <div class="col-12 col-md-6 col-lg-4" style="z-index: 99;">
                             <div class="card p-3">
-                                <img src="img/simbok.jpeg" alt="" class="mx-auto" style="width: 100%; height: 100%;">
+                                <img src="img/simbok.jpeg" alt="" class="mx-auto">
                                 <div class="card-body text-center">
                                     <h5 class="card-title fw-bold" style="font-family: 'gameFont';">Website Simbok</h5>
-                                    <p class="card-text" style="font-family: 'textGame';">
-                                        This project aims to develop a simple, functional, and user-friendly recipe-sharing website, allowing users to easily find, share, and manage recipes efficiently.                
-                                    </p>
-                                    <div class="w-100 mt-4" style="height: 2px; background-color: #007bff;"> </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-4">
-                                        <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
-                                        <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
-                                        <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
-                                        <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo hover-effect">
-                                        <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
-                                        <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo hover-effect">
+                                    <div class="w-100 mt-1" style="height: 3px; background-color: #007bff;"> </div>
+                                    <div class="d-flex align-content-between justify-content-center gap-3">
+                                        <button type="button" class="btn btn-primary mt-3 w-100" data-bs-toggle="modal" data-bs-target="#simbokModal" style="font-family: 'gameFont';">
+                                            Deskripsi Project
+                                        </button>
+                                        <a href="https://github.com/faizilyasa16/website_simbok" class="btn btn-primary mt-3 w-100" style="font-family: 'gameFont';">View Project <i class="bi bi-arrow-right"></i></a>
                                     </div>
-                                    <a href="#" class="btn btn-primary mt-3 w-100" style="font-family: 'gameFont';">View Project <i class="bi bi-arrow-right"></i></a>
 
                                 </div>
                                 
                             </div> 
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3" style="z-index: 99;">
+                        <div class="col-12 col-md-6 col-lg-4" style="z-index: 99;">
                             <div class="card p-3">
-                                <img src="img/sinteo.png" alt="" class="mx-auto" style="width: 100%; height: 100%;">
+                                <img src="img/sinteo.png" alt="" class="mx-auto">
                                 <div class="card-body text-center">
                                     <h5 class="card-title fw-bold" style="font-family: 'gameFont';">Website Sinteo</h5>
-                                    <p class="card-text" style="font-family: 'textGame';">
-                                        This project makes it easy to buy and sell concert tickets. With a responsive and user-friendly interface, users can quickly search, book, and sell their favorite concert tickets securely and effortlessly.
-                                    </p>
-                                    <div class="w-100 mt-3" style="height: 2px; background-color: #007bff;"> </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-3">
-                                        <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
-                                        <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
-                                        <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
-                                        <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo hover-effect">
-                                        <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
-                                        <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo hover-effect">
+                                    <div class="w-100 mt-1" style="height: 3px; background-color: #007bff;"> </div>
+                                    <div class="d-flex align-content-between justify-content-center gap-3">
+                                        <button type="button" class="btn btn-primary mt-3 w-100" data-bs-toggle="modal" data-bs-target="#sinteoModal" style="font-family: 'gameFont';">
+                                            Deskripsi Project
+                                        </button>
+                                        <a href="https://www.figma.com/design/jPVHw7TA5vn0t0wsxxLUL6/Untitled?node-id=0-1&t=igwLod6sqAZ8ekEr-1" class="btn btn-primary mt-3 w-100" style="font-family: 'gameFont';">View Project <i class="bi bi-arrow-right"></i></a>
                                     </div>
-                                    <a href="#" class="btn btn-primary mt-3 w-100" style="font-family: 'gameFont';">View Project <i class="bi bi-arrow-right"></i></a>
 
                                 </div>
                             </div> 
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3" style="z-index: 99;">
+                        <div class="col-12 col-md-6 col-lg-4" style="z-index: 99;">
                             <div class="card p-3">
-                                <img src="img/Mieodos.png" alt="" class="mx-auto" style="width: 100%; height: 100%;">
+                                <img src="img/Mieodos.png" alt="" class="mx-auto">
     
                                 <div class="card-body text-center">
                                     <h5 class="card-title fw-bold" style="font-family: 'gameFont'; ">Website Mie Odos</h5>
-                                    <p class="card-text" style="font-family: 'textGame';">
-                                        This project is designed to display various menus sold at the Mie Odos store. Users can see information about menu choices, descriptions, and prices with a simple and easy-to-understand display.
-                                    </p>
-                                    <div class="w-100 mt-1" style="height: 2px; background-color: #007bff;"> </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-2">
-                                        <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
-                                        <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
-                                        <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
-                                        <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo hover-effect">
-                                        <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
-                                        <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo hover-effect">
+                                    <div class="w-100 mt-1" style="height: 3px; background-color: #007bff;"> </div>
+                                    <div class="d-flex align-content-between justify-content-center gap-3">
+                                        <button type="button" class="btn btn-primary mt-3 w-100" data-bs-toggle="modal" data-bs-target="#odosModal" style="font-family: 'gameFont';">
+                                            Deskripsi Project
+                                        </button>
+                                        <a href="https://faizilyasa16.github.io/Website_Mie_Odos/" class="btn btn-primary mt-3 w-100" style="font-family: 'gameFont';">View Project <i class="bi bi-arrow-right"></i></a>
                                     </div>
-                                    <a href="#" class="btn btn-primary mt-3 w-100" style="font-family: 'gameFont';">View Project <i class="bi bi-arrow-right"></i></a>
 
                                 </div>
                             </div> 
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3" style="z-index: 99;">
+                        <div class="col-12 col-md-6 col-lg-4" style="z-index: 99;">
                             <div class="card p-3">
-                                <img src="img/tokobunga.png" alt="" class="mx-auto" style="width: 100%; height: 100%;">
+                                <img src="img/himsi.png" alt="" class="mx-auto">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title fw-bold" style="font-family: 'gameFont'; font-size: 1.2rem;">Website Toko Bunga</h5>
-                                    <p class="card-text" style="font-family: 'textGame';">
-                                        This website is designed to display flower catalogues, prices, and product descriptions. Users can explore various options, make purchases, and conveniently arrange payment and delivery for a seamless shopping experience.
-                                    </p>
-                                    <div class="w-100 mt-1" style="height: 2px; background-color: #007bff;"> </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-2">
-                                        <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
-                                        <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
-                                        <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
-                                        <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
-                                        <img src="img/php.png" alt="PHP Logo" class="skill-logo hover-effect">
+                                    <h5 class="card-title fw-bold" style="font-family: 'gameFont'; font-size: 1.2rem;">Website HIMSI UBSI</h5>
+                                    <div class="w-100 mt-1" style="height: 3px; background-color: #007bff;"> </div>
+                                    <div class="d-flex align-content-between justify-content-center gap-3">
+                                        <button type="button" class="btn btn-primary mt-3 w-100" data-bs-toggle="modal" data-bs-target="#himsiModal" style="font-family: 'gameFont';">
+                                            Deskripsi Project
+                                        </button>
+                                        <a href="https://himsikcm.my.id/" class="btn btn-primary mt-3 w-100"  style="font-family: 'gameFont';">View Project <i class="bi bi-arrow-right"></i></a>
                                     </div>
-                                    <a href="#" class="btn btn-primary mt-3 w-100" id="Service" style="font-family: 'gameFont';">View Project <i class="bi bi-arrow-right"></i></a>
+
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4" style="z-index: 99;">
+                            <div class="card p-3">
+                                <img src="img/bekasicare.png" alt="" class="mx-auto">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold" style="font-family: 'gameFont'; font-size: 1.2rem;">Website Bekasi Care</h5>
+                                    <div class="w-100 mt-1" style="height: 3px; background-color: #007bff;"> </div>
+                                    <div class="d-flex align-content-between justify-content-center gap-3">
+                                        <button type="button" class="btn btn-primary mt-3 w-100" data-bs-toggle="modal" data-bs-target="#bekasiCareModal" style="font-family: 'gameFont';">
+                                            Deskripsi Project
+                                        </button>
+                                        <a href="https://www.figma.com/design/jgrOg6IiXX30AkhXzQTYD6/Untitled?node-id=0-1&t=nYGxIxkzbrfe2Bow-1" class="btn btn-primary mt-3 w-100"  style="font-family: 'gameFont';">View Project <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+
                                 </div>
                             </div> 
                         </div>
                     </div>
                 </div>
+                <h3 class="fw-bold my-3 judul-gradient" style="font-family: 'gameFont'; ">Sertificate</h3>
         </div>
     </section>
 
-    <section class="pemandangan"  >
+    <!-- Modal for Mie Odos Project -->
+    <div class="modal fade" id="odosModal" tabindex="-1" aria-labelledby="odosModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="odosModalLabel" style="font-family: 'gameFont';">Website Mie Odos</h5>
+                </div>
+                <div class="modal-body">
+                        <p class="card-text" style="font-family: 'textGame';">
+                            This project is designed to display various menus sold at the Mie Odos store. Users can see information about menu choices, descriptions, and prices with a simple and easy-to-understand display.
+                        <h5 class="my-4 text-center fw-bold" style="font-family: 'gameFont'; ">Technologies Used</h5>
+                        <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-2">
+                            <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
+                            <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
+                            <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
+                            <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
+                            <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo hover-effect">
+                            <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo hover-effect">
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Website SIMBOK -->
+    <div class="modal fade" id="simbokModal" tabindex="-1" aria-labelledby="simbokModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="simbokModalLabel" style="font-family: 'gameFont';">Website SIMBOK</h5>
+                </div>
+                <div class="modal-body">
+                        <p class="card-text" style="font-family: 'textGame';">
+                            This project aims to develop a simple, functional, and user-friendly recipe-sharing website, allowing users to easily find, share, and manage recipes efficiently.
+                        </p>
+                        <h5 class="my-4 text-center fw-bold" style="font-family: 'gameFont'; ">Technologies Used</h5>
+                        <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-2">
+                            <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
+                            <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
+                            <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
+                            <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
+                            <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo hover-effect">
+                            <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo hover-effect">
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Website Sinteo -->
+    <div class="modal fade" id="sinteoModal" tabindex="-1" aria-labelledby="sinteoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="sinteoModalLabel" style="font-family: 'gameFont';">Website Sinteo</h5>
+                </div>
+                <div class="modal-body">
+                        <p class="card-text" style="font-family: 'textGame';">
+                            This project makes it easy to buy and sell concert tickets. With a responsive and user-friendly interface, users can quickly search, book, and sell their favorite concert tickets securely and effortlessly.
+                        </p>
+                        <h5 class="my-4 text-center fw-bold" style="font-family: 'gameFont'; ">Technologies Used</h5>
+                        <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-2">
+                            <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
+                            <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
+                            <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
+                            <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo hover-effect">
+                            <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
+                            <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo hover-effect">
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal for HIMSI UBSI -->
+    <div class="modal fade" id="himsiModal" tabindex="-1" aria-labelledby="himsiModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="himsiModalLabel" style="font-family: 'gameFont';">Website HIMSI UBSI</h5>
+                </div>
+                <div class="modal-body">
+                        <p class="card-text" style="font-family: 'textGame';">
+                            This website is designed for HIMSI UBSI members at Cut Mutia and Kalimalang campuses. The platform serves as a hub for sharing the latest activities, articles, and knowledge from HIMSI BSI.
+                        </p>
+                        <p class="card-text" style="font-family: 'textGame';">
+                            Key features include an attendance system, article creation by students (reviewed by BPH), and a feedback section where members can share their experiences during their involvement with HIMSI.
+                        </p>
+                        <h5 class="my-4 text-center fw-bold" style="font-family: 'gameFont'; ">Technologies Used</h5>
+                        <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-2">
+                            <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
+                            <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
+                            <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
+                            <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
+                            <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo hover-effect">
+                            <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo hover-effect">
+                            <img src="img/mysql.png" alt="MySQL Logo" class="skill-logo hover-effect">
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal for Bekasi Care -->
+    <div class="modal fade" id="bekasiCareModal" tabindex="-1" aria-labelledby="bekasiCareModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="bekasiCareModalLabel" style="font-family: 'gameFont';">Website Bekasi Care</h5>
+                </div>
+                <div class="modal-body">
+                        <p class="card-text" style="font-family: 'textGame';">
+                            Bekasi Care is a platform for residents affected by flooding to report flood problems in their area. The website features a discussion system where community members can discuss flood-related issues and collaborate on solutions.
+                        </p>
+                        <p class="card-text" style="font-family: 'textGame';">
+                            Users can also create articles about flood awareness and prevention. The platform includes a transparent reporting system that tracks progress from initial report until the flood issue is resolved, ensuring accountability throughout the process.
+                        </p>
+                        <h5 class="my-4 text-center fw-bold" style="font-family: 'gameFont'; ">Technologies Used</h5>
+                        <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-2">
+                            <img src="img/html.png" alt="HTML Logo" class="skill-logo hover-effect">
+                            <img src="img/css.png" alt="CSS Logo" class="skill-logo hover-effect">
+                            <img src="img/javascript.png" alt="JavaScript Logo" class="skill-logo hover-effect">
+                            <img src="img/figma.png" alt="Figma Logo" class="skill-logo hover-effect">
+                            <img src="img/bootstrap.png" alt="Bootstrap Logo" class="skill-logo hover-effect">
+                            <img src="img/laravel.png" alt="Laravel Logo" class="skill-logo hover-effect">
+                            <img src="img/mysql.png" alt="MySQL Logo" class="skill-logo hover-effect">
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="pemandangan"  id="Service">
         <div class="container vh-100">
             <div class="row justify-content-center align-items-center parallax-card w-100">
                 <div class="col-12">
@@ -348,18 +488,6 @@
             <div class="gunung">
             </div>
     </section>
-    
-
-
-
-
-
-    
-
-
-
-
-
     <div class="contact-page text-white">
         <img src="img/gatau.png" alt="">
         <img src="img/dino.png" alt="">
@@ -427,7 +555,6 @@
     
 
     <script src="js/script.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwl5YMAwsq2ZiAMJ4SUTtL4SUYxIj1qF-qMgfRS9VugHzWgQt_VrRvn70y5JBJ0uGlqMw/exec'
@@ -458,5 +585,6 @@
             })
         })
       </script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

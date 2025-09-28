@@ -48,6 +48,15 @@ body {
     overflow-x: hidden;
 }
 
+/* Project Card Images Styling */
+.card img {
+    width: 100%;
+    height: 200px; /* Fixed height untuk semua gambar */
+    object-fit: cover; /* Menjaga proporsi gambar dengan crop jika perlu */
+    object-position: center; /* Posisi gambar di tengah */
+    border-radius: 8px; /* Rounded corners */
+}
+
 .starry-sky {
     position: fixed; /* Tetap di tempat meskipun halaman digulir */
     top: 0;
