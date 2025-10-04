@@ -1,5 +1,5 @@
 const starrySky = document.querySelector('.starry-sky');
-const totalStars = 200; // Tingkatkan jumlah bintang jika perlu
+const totalStars = 50; // Tingkatkan jumlah bintang jika perlu
 
 for (let i = 0; i < totalStars; i++) {
     const star = document.createElement('div');
